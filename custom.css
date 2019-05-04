@@ -1,16 +1,5 @@
-body {
-    padding: 0;
-    color: rgb(55, 55, 55);
-    font-family: Bookman Old Style;
+html { 
+   width:100%; 
+   height:100%; 
+   background:url(symbol.png) center center no-repeat;
 }
-
-#center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -150px;
-    margin-left: -150px;
-    width: 300px;
-    height: 300px;
-    font-size: 36px;
-}​
