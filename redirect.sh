@@ -9,4 +9,4 @@ redirect_from: /$1
 EOF
 git add redirects/$1.html
 git commit -q -m "$1 -> $2"
-git push
+git push -q
