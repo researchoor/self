@@ -1,7 +1,12 @@
 #!/bin/bash
 
-rm -f $1.html
-echo "<meta http-equiv='refresh' content='0; url=$2'>" >> $1.html
-git add $.html
-git commit -m "$1 -> $2"
+rm -f redirects/$1.html
+cat <<EOF >> redirects/$1.html
+---
+redirect_from: /$1
+---
+<meta http-equiv='refresh' content='0; url=$2'>
+EOF
+git add -q redirects/$.html
+git commit -q -m "$1 -> $2"
 git push
