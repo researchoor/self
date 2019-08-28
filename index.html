@@ -1,3 +1,6 @@
+---
+title: info
+---
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,10 +10,9 @@
     </head>
     <body>
       <div class="center">
-        <p><b>Ben Friesen.</b></p>
         <img src="symbol.png"></img>
-        <p id="me"></p>
+        <p><b>Ben Friesen.</b></p>
+        <p>{{ site.github.build_revision | truncate: 8, "" }}</p>
      </div>
     </body>
-    <script src="me.js"></script>
 </html>
