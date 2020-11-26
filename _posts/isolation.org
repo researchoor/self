@@ -1,2 +1,0 @@
-#+TITLE: Isolation
-#+LAYOUT: post
