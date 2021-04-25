@@ -3,14 +3,12 @@
     <table style="width: 100%; padding: 15px 0px 15px 0px;">
       <tr>
         <td><b>{{ include.title | default: page.title }}</b></td>
-        <td style="text-align: right; vertical-align: top; width: 100px;"><a href="/thoughts">{{ include.sub_title | default: "a thought" }}</a></td>
+        <td style="text-align: right; vertical-align: top; width: 25%;"><a href="/thoughts">{{ include.sub_title | default: "a thought" }}</a></td>
       </tr>
     </table>
   </div>
   {% if page.spotify %}
   {% include spotify.html id=page.spotify %}
   {% endif %}
-  <div style="border: 1px black solid; padding: 10px 5px 5px 5px; margin-top: 15px; width: 100%;">
-    <marquee behavior="scroll" direction="left">DISCLAIMER :: The words that may appear on your screen will be mostly philosophical ficiton, terrible advice, and probably not even my opinion. I don't know anything, and if you somehow ended up here we probably have that in common :: DISCLAIMER</marquee>
-  </div>
+  <marquee style="border: 1px black solid; padding: 10px 0px 5px 0px; margin-top: 15px;" behavior="scroll" direction="left">DISCLAIMER :: The words that may appear on your screen will be mostly philosophical ficiton, terrible advice, and probably not even my opinion. I don't know anything, and if you somehow ended up here we probably have that in common :: DISCLAIMER</marquee>
 </div>
