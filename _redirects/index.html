@@ -1,0 +1,12 @@
+---
+title: redirects.
+layout: default
+---
+
+<div style="text-align: left;">
+  <dl>
+    {% for link in site.redirects %}
+    <dt>{{ link.symbol }} <a href="{{ link.redirect_to }}">{{ link.redirect_from }}</a></dt>
+    {% endfor %}
+  </dl>
+</div>

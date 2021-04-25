@@ -1,13 +1,16 @@
-<div style="padding-bottom: 25px; border-bottom: 1px black dashed;">
+<div id="header">
   <div>
     <table style="width: 100%; padding: 15px 0px 15px 0px;">
       <tr>
-        <td><b>{{ page.title }}</b></td>
-        <td style="text-align: right; vertical-align: top; width: 100px;"><a style="color: black; text-decoration: none" href="http://lllil.li/thoughts">a thought</a></td>
+        <td><b>{{ include.title | default: page.title }}</b></td>
+        <td style="text-align: right; vertical-align: top; width: 100px;"><a href="/thoughts">{{ include.sub_title | default: "a thought" }}</a></td>
       </tr>
     </table>
   </div>
-  {% if page contains "spotify" %}
-    <iframe src="https://open.spotify.com/embed/track/{{ spotify }}" width="490" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media" style="border: 5px white solid; outline: 1px black solid;"></iframe>
+  {% if page.spotify %}
+  {% include spotify.html id=page.spotify %}
   {% endif %}
+  <div style="border: 1px black solid; padding: 10px 0 5px 0; margin-top: 15px; width: 500px;">
+    <marquee behavior="scroll" direction="left">DISCLAIMER :: The words that may appear on your screen will be mostly philosophical ficiton, terrible advice, and probably not even my opinion. I don't know anything, and if you somehow ended up here we probably have that in common :: DISCLAIMER</marquee>
+  </div>
 </div>

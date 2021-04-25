@@ -1,18 +1,9 @@
 ---
 title: info
+layout: default
 ---
-<!doctype html>
-<html lang="en">
-  <head>
-        <meta charset="UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>info</title>
-        <link href="custom.css" type="text/css" rel="stylesheet"/>
-    </head>
-    <body>
-      <div class="center">
-        <img src="symbol.png"></img>
-        <p>{{ site.github.build_revision | truncate: 8, "" }}</p>
-     </div>
-    </body>
-</html>
+
+<div class="center">
+  <img src="symbol.png"></img>
+  <p>{{ site.github.build_revision | truncate: 8, "" }}</p>
+</div>

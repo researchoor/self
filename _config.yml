@@ -1,3 +1,9 @@
 plugins:
   - jekyll-redirect-from
   - jekyll-org
+
+collections:
+  redirects:
+    output: true
+  thoughts:
+    output: true
