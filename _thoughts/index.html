@@ -1,0 +1,17 @@
+---
+title: thoughts.
+layout: centered
+spotify: 4jGIouxHI2S9TcglnffDEe
+---
+
+{% include header.html sub_title="a collection" %}
+<div id="content">
+  <dl>
+    {% for thought in site.thoughts %}
+    {% if thought.url != page.url %}
+    <dt><a href="{{ thought.url | remove: '.html' }}">{{ thought.title }}</a></dt>
+    {% endif %}
+    {% endfor %}
+  </dl>
+</div>
+{% include footer.html %}
