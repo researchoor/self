@@ -4,7 +4,7 @@
     background: #ffffff;
 }
 
-.center {
+div.center {
     max-width: 500px;
     min-width: 500px;
     position: absolute;
@@ -12,6 +12,12 @@
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .column {
@@ -71,9 +77,6 @@
 }
 
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
