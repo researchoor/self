@@ -3,7 +3,7 @@ plugins:
   - jekyll-org
 
 collections:
-  redirects:
+  links:
     output: true
   thoughts:
     output: true
