@@ -1,9 +1,11 @@
 <div id="header">
   <div>
-    <table style="width: 100%; padding: 15px 0px 15px 0px;">
+    <table>
       <tr>
         <td><b>{{ include.title | default: page.title }}</b></td>
-        <td style="text-align: right; vertical-align: top; width: 25%;"><a href="/thoughts">{{ include.sub_title | default: "a thought" }}</a></td>
+        <td style="text-align: right; vertical-align: top; width: 25%;">
+          <a href="/thoughts">{{ include.sub_title | default: "a thought" }}</a>
+        </td>
       </tr>
     </table>
   </div>

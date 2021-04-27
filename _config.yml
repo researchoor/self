@@ -7,3 +7,6 @@ collections:
     output: true
   thoughts:
     output: true
+
+org:
+  liquid: true

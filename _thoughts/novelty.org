@@ -30,13 +30,13 @@ So why do we even need novelty. What alternative does it have to just being a fa
 
 The only way I've been able to reconcile this is with an inaccurate comparison. Since I'm a nerd, I can only explain this via artifical intelligence practices[1].
 
-[1]: This is not to say that current AI methods are in line to how humans actually process the world, just that humans tend to be able to explain our own nature by projecting onto their interests.
+{% include scroll.html content='[1] This is not to say that current AI methods are in line to how humans actually process the world, just that humans tend to be able to explain our own nature by projecting onto their interests.' %}
 
 A general concept when trying to efficiently solve a task using artifical intelligence is the use gradient descent. That any problem can be defined as a series of metrics and weights that can be represented as these hills or gradients. And the descending or climbing is the search for the optimal solution.
 
 It's a hard task.
 
-[[ /assets/descent.png ]]
+[[ /static/media/descent.png ]]
 
 Say you are in a field of hills. It's quite foggy, you can only see so far in front of you.
 
