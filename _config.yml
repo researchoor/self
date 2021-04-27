@@ -1,6 +1,7 @@
 plugins:
   - jekyll-redirect-from
   - jekyll-org
+  - jekyll-git_metadata
 
 collections:
   links:

@@ -3,4 +3,4 @@ title: version
 layout: centered
 ---
 
-<p style="text-align: center;">{{ site.github.build_revision | truncate: 8, "" }}</p>
+<p style="text-align: center;">{{ site.git.last_commit.short_sha }}</p>
