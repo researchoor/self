@@ -1,6 +1,6 @@
 <div
   class="box tag"
-  style="background-image: url({{ include.gif }});
-         background-size: auto {{ include.height }};
-         height: {{ include.height }}">
+  style="background-image: url(/static/media/{{ page.gif | default: 'skull.gif' }});
+         background-size: auto auto;
+         height: {{ include.height | default: '40px' }}">
 </div>
