@@ -28,16 +28,16 @@ img.center {
 }
 
 #header {
-    margin-top: 15px;
+    margin-top: 25px;
     margin-bottom: 20px;
     padding-bottom: 15px;
     border-bottom: 1px var(--highlights) dashed;
 }
 
 #footer {
-    padding-top: 15px;
+    padding-top: 10px;
     border-top: 1px var(--highlights) dashed;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 #header a {
@@ -49,8 +49,6 @@ img.center {
 }
 
 #content {
-    margin-top: 10px;
-    margin-bottom: 10px;
     text-align: justify;
 }
 
@@ -90,12 +88,26 @@ img {
     margin-bottom: 5px;
 }
 
+@media (prefers-color-scheme: dark) {
+    .tag {
+        background: var(--foreground);
+    }
+    marquee {
+        background: var(--foreground);
+        color: var(--background);
+    }
+}
+
+.tag {
+    background-position: center bottom;
+}
+
 .spotify {
     margin-top: 10px;
     border: 1px var(--highlights) solid;
 }
 
-b, h1, h2, h3, h4, marquee, a {
+b, h1, h2, h3, h4, a {
     color: var(--highlights);
 }
 

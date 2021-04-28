@@ -1,1 +1,6 @@
-<div class="box" style="background-image: url({{ include.gif }}); backdrop-filter: grayscale(1); height: {{ include.height | default: '40px' }};"></div>
+<div
+  class="box tag"
+  style="background-image: url({{ include.gif }});
+         background-size: auto {{ include.height }};
+         height: {{ include.height }}">
+</div>
