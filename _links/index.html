@@ -10,7 +10,7 @@ spotify: 1I7QmEOMusgj3PgXfPT0HP?si=mJjIB7EwRa-a9c4BnDFr9w
   <table style="width: 100%; padding-top: 15px;">
     {% for link in site.links %}
     <tr>
-        <td><a href="{{ link.redirect_to }}">{{ link.redirect_from }}</td>
+        <td><a href="{{ link.redirect_to }}">{{ link.redirect_from }}</a></td>
         <td style="text-align: right; vertical-align: top; width: 25%;">{{ link.category }}</td>
     </tr>
     {% endfor %}
