@@ -88,16 +88,6 @@ img {
     margin-bottom: 5px;
 }
 
-@media (prefers-color-scheme: dark) {
-    .tag {
-        background: var(--foreground);
-    }
-    marquee {
-        background: var(--foreground);
-        color: var(--background);
-    }
-}
-
 .tag {
     background-position: center bottom;
 }
