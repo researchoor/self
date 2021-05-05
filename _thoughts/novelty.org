@@ -31,7 +31,7 @@ The only way I've been able to reconcile this is with an inaccurate comparison. 
 
 {% include scroll.html content='[1] This is not to say that current AI methods are in line to how humans actually process the world, just that humans tend to be able to explain our own nature by projecting onto their interests.' %}
 
-A general concept when trying to efficiently solve a task using artifical intelligence is the use gradient descent. That any problem can be defined as a series of metrics and weights that can be represented as these hills or gradients. And the descending or climbing is the search for the optimal solution.
+A general concept when trying to efficiently solve a task using artifical intelligence is the use of gradient descent. That any problem can be defined as a series of metrics and weights that can be represented as these hills or gradients. And the descending or climbing is the search for the optimal solution.
 
 It's a hard task.
 
