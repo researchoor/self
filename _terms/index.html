@@ -10,8 +10,9 @@ layout: centered
   <dl>
     {% for term in site.terms %}
     {% if term.url != page.url %}
-    <dt><a href="{{ term.url | remove: '.html' }}">{{ term.title | downcase }}</a> - {{ term.content | strip_html }}</dt>
+    <dt><a href="{{ term.url | remove: '.html' }}">{{ term.title | downcase }}</a> - {{ term.content | split: '</p>' | first | strip_html }}</dt>
     {% endif %}
     {% endfor %}
   </dl>
 </div>
+{% include linebreak.html %}

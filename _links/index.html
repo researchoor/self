@@ -4,10 +4,10 @@ layout: centered
 spotify: 1I7QmEOMusgj3PgXfPT0HP?si=mJjIB7EwRa-a9c4BnDFr9w
 ---
 
-<p><b>here</b> — have some good links</p>
+{% include titlebar.html title="here" bold_title=true subtitle="have some good links." %}
 {% include spotify.html id=page.spotify %}
 <div style="text-align: left;">
-  <table style="width: 100%; padding-top: 15px;">
+  <table style="width: 100%; padding-top: 10px;">
     {% for link in site.links %}
     <tr>
         <td><a href="{{ link.redirect_to }}">{{ link.redirect_from }}</a></td>
