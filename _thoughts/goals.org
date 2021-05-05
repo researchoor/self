@@ -1,5 +1,4 @@
-#+TITLE: Measuring Self.
-#+LAYOUT: post
+#+TITLE: Measuring Self
 #+SPOTIFY: 0UV5zxRMz6AO4ZwUOZNIKI
 
 I fucking love metrics. They make life easier. I hear a lot of people talk about how staticians never see the whole picture, when in reality they can only work with what they have. As technologies improve data becomes more descriptive and as a result more consistent predictions can be made. It's great! Unless you are bad at stats like me.

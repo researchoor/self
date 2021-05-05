@@ -8,6 +8,21 @@ collections:
     output: true
   thoughts:
     output: true
+  terms:
+    output: true
 
+defaults:
+  - scope:
+      type: "thoughts"
+    values:
+      layout: "thought"
+      subtitle: "a thought."
+      subtitle_link: "/thoughts"
+  - scope:
+      type: "terms"
+    values:
+      layout: "term"
+      subtitle: "a term."
+      subtitle_link: "/terms"
 org:
   liquid: true

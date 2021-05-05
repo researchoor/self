@@ -28,16 +28,16 @@ img.center {
 }
 
 #header {
-    margin-top: 25px;
     margin-bottom: 20px;
     padding-bottom: 15px;
-    border-bottom: 1px var(--highlights) dashed;
+    border-bottom: 1px var(--highlights) solid;
 }
 
 #footer {
     padding-top: 10px;
-    border-top: 1px var(--highlights) dashed;
+    border-top: 1px var(--highlights) solid;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 #header a {
@@ -98,6 +98,7 @@ img {
     height: 80px;
     frameborder: 0;
     border: 1px var(--highlights) solid;
+    filter: grayscale(100%);
 }
 
 b, h1, h2, h3, h4, a {
@@ -110,4 +111,18 @@ a:hover {
 
 table {
     width: 100%;
+}
+
+.titlebar {
+    padding-top: 10px;
+}
+
+table {
+    border-spacing: 0;
+}
+
+dt {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

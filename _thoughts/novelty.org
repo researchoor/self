@@ -1,12 +1,11 @@
-#+TITLE: The Enemy of Contentment.
-#+LAYOUT: post
+#+TITLE: The Enemy of Contentment
 #+SPOTIFY: 5DOGn6okZZAqRG899Ou25t
 
-More often my memories are thematic instead of specific. A series of events compressed into lessons. Easier on the meat proccesor and storage for retrieval and calculations. However I do have a set of stories in my mind that have stuck with me, as if at that moment I was so aware that it permiates all my decisions to this day. And they aren't even that interesting.
+More often my [[memories]] are thematic instead of specific. A series of events compressed into lessons. Easier on the meat proccesor and storage for retrieval and calculations. However I do have a set of stories in my mind that have stuck with me, as if at that moment I was so aware that it permiates all my decisions to this day. And they aren't even that interesting.
 
 > Be me, sitting on a chair, cross legged. See a sibling, possibly a parent, also cross legged. Become internally frustrated and immediatley change how I'm sitting.
 
-What a ridiculous waste of space. I don't even remember my Dad's birthday. Yet I have a collection of these short temper tantrums. Moments where I /needed/ to be different, unique. The anger serving as the method to brand these engineered dilemnas for some evolutionary purpose.
+What a ridiculous waste of space. I don't even remember my Dad's birthday. Yet I have a collection of these short temper tantrums. Moments where I /needed/ to be different, unique. The [[anger]] serving as the method to brand these engineered dilemnas for some evolutionary purpose.
 
 Are these memories simply a symptom of my human condition or are they the root of my ongoing decision making?
 
@@ -42,7 +41,7 @@ Say you are in a field of hills. It's quite foggy, you can only see so far in fr
 
 Then I ask you to descend to the lowest point or reach the highest hill.
 
-Well a simple strategy is to take your next step and feel if you are going higher or lower, and keep following that trajectory if it aligns with your goal. However the issue with this is that you can't even imagine the everest in the distance. That the /real/ optimal path is going down a valley first because the peak is simply on the other side.
+Well a simple strategy is to take your next step and feel if you are going higher or lower, and keep following that trajectory if it aligns with your [[goals]]. However the issue with this is that you can't even imagine the everest in the distance. That the /real/ optimal path is going down a valley first because the peak is simply on the other side.
 
 With all of that in mind we add another tool to your arsenal, a teleporter. Sadly this little hand held teleporter is written in an unknown language, with many knobs and levers. To the uninformed eye pressing the button will drop you of at any number of places.
 

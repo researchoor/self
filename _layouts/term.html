@@ -1,0 +1,9 @@
+---
+layout: centered
+---
+
+{% assign title_lowercase = page.title | downcase %}
+{% include titlebar.html title=title_lowercase bold_title=true subtitle=page.subtitle %}
+<div id="content">
+  {{ content }}
+</div>

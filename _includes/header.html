@@ -1,14 +1,5 @@
 <div id="header">
-  <div>
-    <table>
-      <tr>
-        <td><b>{{ include.title | default: page.title }}</b></td>
-        <td style="text-align: right; vertical-align: top; width: 25%;">
-          <a href="/thoughts">{{ include.sub_title | default: "a thought" }}</a>
-        </td>
-      </tr>
-    </table>
-  </div>
+  {% include titlebar.html title=page.title bold_title=true subtitle=page.subtitle subtitle_link=page.subtitle_link %}
   {% if page.spotify %}
   {% include spotify.html id=page.spotify %}
   {% endif %}

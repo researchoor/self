@@ -1,0 +1,16 @@
+<table class="titlebar">
+  <tr>
+    {% if include.bold_title %}
+    <td><b>{{ include.title }}</b></td>
+    {% else %}
+    <td>{{ include.title }}</td>
+    {% endif %}
+    <td style="text-align: right; vertical-align: top; width: 25%;">
+      {% if include.subtitle_link %}
+      <a href="{{ include.subtitle_link }}">{{ include.subtitle }}</a>
+      {% else %}
+      {{ include.subtitle }}
+      {% endif %}
+    </td>
+  </tr>
+</table>

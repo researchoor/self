@@ -1,0 +1,17 @@
+---
+title: terms
+subtitle: a dictionary.
+layout: centered
+---
+
+{% include titlebar.html title=page.title bold_title=true subtitle=page.subtitle %}
+{% include scroll.html content="AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH :: None of these are actual definions, they are purely for reference when I inevitably use the terms out of context :: AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH" %}
+<div id="content">
+  <dl>
+    {% for term in site.terms %}
+    {% if term.url != page.url %}
+    <dt><a href="{{ term.url | remove: '.html' }}">{{ term.title | downcase }}</a> - {{ term.content | strip_html }}</dt>
+    {% endif %}
+    {% endfor %}
+  </dl>
+</div>
