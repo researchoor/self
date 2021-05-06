@@ -1,0 +1,77 @@
+#+TITLE: Cyclical Thoughts and Where to Find Them
+#+SPOTIFY: 1nFlu9cVAXknq2zQXMHoPk?si=Mvp2b3JURsKRiw0C05fhQA
+
+Constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant noise.
+
+Neverending, ever draining, cyclical thoughts. Cyclical, not in a repeating way, but a self referential.
+
+I used to think that these were just logical trappings. Like a bad rube gold machine that tumbles along only because I can't solve a problem. That at each step of the way, if I only knew /the truth/ about any point I make I would be able to pluck myself out of my brain.
+
+Lately I've imagined my brain as more of an ongoing dream machine. While the original trigger may have some connection to reality, the subsequent cycle has no tie whatsoever. Ideas come to your brain merely as responses and realizations to the random firings of your brain. Dreams are simply a processing of your ongoing input represented as senses, visual and otherwise.
+
+If that's the case, then thoughts aren't even tied to language. The only reason one could lead to other are in relation to how we have dug our mental trenches. Habit instead of reason. Nothing to solve, everything to ignore.
+
+Which is cool and all, but I'm literally only writing about this cause I can't stop thinking about it. Levels upon levels of fixation, [[/terms/hyperfixation][hyperfixation]] all the way down. Worrying about worrying, about worrying, about worrying, about worrying...
+
+** Examples
+
+So as an attempt to get those fuzzy needle feelings, but for the noggin, I'll write them down here. For reference really, but maybe the act will do something at some point.
+
+{% include scroll.html content='Maybe if I was a better writer this would be apparent, but the pacing and timing of these thoughts can\'t be entirely replicated in words and sentences. Words are only apparent in moments of self reflection of those thoughts, not necessary in the moment. Words are pretty unimportant in a brain on autopilot.' %}
+
+Usually in relation to energy, sleep, and everything in between:
+
+#+BEGIN_SRC
+God I'm so fucking tired.
+
+I'm tired of the shitty people — no.
+I'm tired of the shitty attitudes.
+I'm tired of the shitty environements.
+I'm tired of dealing with people reacting to those environments with those attitudes.
+I'm tired of how I react poorly to those reactions.
+
+I'm fucking tired.
+
+But sleeping doesn't wake me up.
+A nice day in the sun,
+watching some cricket,
+trying to read a book for the 89th time,
+that doesn't even do the trick even if I tell others the moment.
+
+I hate it everytime, but thats alright.
+I dont know if it's alright.
+It shouldn't be alright.
+It shouldn't be alright.
+It shouldn't be alright.
+It shouldn't be alright.
+It shouldn't be alright.
+
+All I want is for it to be not right.
+Why is it not right.
+Why am I not alright.
+#+END_SRC
+
+Failure in relation to being and doing good:
+
+#+BEGIN_SRC
+Man I really fucked that up.
+
+Why did I fuck it up.
+It wasn't hard.
+
+Why can't I do it.
+I could do it.
+Why are you trying to make yourself feel better.
+Why are you making excuses.
+Why are you lying to yourself.
+
+You have to be better.
+Better for who?
+Better for what?
+
+I can't do anything.
+I have everything and can't help anyone.
+This sucks, I suck.
+#+END_SRC
+
+The real lesson from all of this is that writing, writing about the writing, talking about the writing, and internalizing my thoughts as writing probably doesn't count as finding silence.

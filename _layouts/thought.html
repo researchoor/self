@@ -6,8 +6,4 @@ layout: column
 <div id="content">
 {{ content }}
 </div>
-{% if page.gif %}
-{% include footer.html gif=page.gif %}
-{% else %}
-{% include footer.html %}
-{% endif %}
+{% include footer.html banner=page.banner %}

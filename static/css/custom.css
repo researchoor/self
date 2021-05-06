@@ -6,8 +6,6 @@
 }
 
 div.center {
-    width: 90%;
-    max-width: 500px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -15,17 +13,20 @@ div.center {
     transform: translate(-50%, -50%);
 }
 
+div.column {
+    margin: 0 auto;
+    display: block;
+}
+
+div.center, div.column {
+    width: 90%;
+    max-width: 500px;
+}
+
 img.center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-.column {
-    width: 90%;
-    max-width: 500px;
-    margin: 0 auto;
-    display: block;
 }
 
 #header {
@@ -82,7 +83,8 @@ img {
     margin-bottom: 5px;
 }
 
-.tag {
+.banner {
+    margin-top: 20px;
     background-position: center bottom;
 }
 
@@ -129,4 +131,14 @@ dt {
     margin-top: 15px;
     margin-bottom: 20px;
     border-bottom: 1px var(--foreground) solid;
+}
+
+.src {
+    border: 1px var(--foreground) solid;
+    padding: 15px;
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
