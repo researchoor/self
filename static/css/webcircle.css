@@ -22,32 +22,40 @@ a {
 }
 
 #prev {
-    display: none;
+    visibility: hidden;
     order: 0;
 }
 
 #prev::before  {
+    visibility: visible;
     content: "<";
     text-decoration: none;
-}
-
-#all {
-    order: 1;
-    margin: 0 2ch;
-    display: none;
 }
 
 #all::after {
     content: "o";
     text-decoration: none;
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#all {
+    order: 1;
+    margin: 0 2ch;
+    visibility: hidden;
+    position: relative;
 }
 
 #next::after  {
     content: ">";
     text-decoration: none;
+    visibility: visible;
 }
 
 #next {
     display: none;
     order: 2;
+    visibility: hidden;
 }
