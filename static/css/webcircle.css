@@ -1,3 +1,8 @@
+@font-face {
+    font-family: comfy;
+    src: url(https://comfi.es/src/font/IndieFlower-Regular.ttf) format("truetype");
+}
+
 body {
     font-family: 'comfy', 'courier', 'monospace';
     font-size: 13px;
@@ -5,14 +10,8 @@ body {
 }
 
 a {
-    color: #000;
+    color: var(--foreground, "#000")
     white-space: pre;
-}
-
-@media (prefers-color-scheme: dark) {
-    a {
-        color: #aaa;
-    }
 }
 
 #prev {
@@ -20,15 +19,16 @@ a {
 }
 
 #prev::after  {
-    content: "< ";
+    content: " < ";
 }
 
 #all {
     order: 1;
+    margin: 0 2ch;
 }
 
 #next::before  {
-    content: " >";
+    content: " > ";
 }
 
 #next {
