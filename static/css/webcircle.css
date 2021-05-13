@@ -7,6 +7,7 @@ body {
     font-family: 'comfy', 'courier', 'monospace';
     font-size: 13px;
     display: flex;
+    justify-content: center;
 }
 
 a {
@@ -21,22 +22,32 @@ a {
 }
 
 #prev {
+    display: none;
     order: 0;
 }
 
 #prev::before  {
-    content: " < ";
+    content: "<";
+    text-decoration: none;
 }
 
 #all {
     order: 1;
     margin: 0 2ch;
+    display: none;
+}
+
+#all::after {
+    content: "o";
+    text-decoration: none;
 }
 
 #next::after  {
-    content: " > ";
+    content: ">";
+    text-decoration: none;
 }
 
 #next {
+    display: none;
     order: 2;
 }
