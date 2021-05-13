@@ -151,9 +151,3 @@ dt {
 .comfy {
     font-family: comfy;
 }
-
-@media (min-width: 500px) {
-    .break {
-        style="display: block; float: left;"
-    }
-}
