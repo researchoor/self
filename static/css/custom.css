@@ -10,6 +10,10 @@
     color: var(--foreground);
 }
 
+img {
+    filter: grayscale(1);
+}
+
 div.center {
     position: absolute;
     left: 50%;
@@ -74,10 +78,6 @@ img.center {
     border-top: 1px var(--foreground) solid;
     border-bottom: 1px var(--foreground) solid;
     width: 100%;
-}
-
-#content img {
-    filter: grayscale(1);
 }
 
 .box {
