@@ -5,6 +5,9 @@
     {% else %}
     <td>{{ include.title }}</td>
     {% endif %}
+    {% if include.center %}
+    <td>{{ include.center }}</td>
+    {% endif %}
     <td style="text-align: right; width: 35%;">
       {% if include.subtitle_link %}
       <a href="{{ include.subtitle_link }}">{{ include.subtitle }}</a>
