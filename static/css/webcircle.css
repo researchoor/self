@@ -1,0 +1,28 @@
+body {
+    font-family: 'comfy', 'courier', 'monospace';
+    font-size: 13px;
+    color: #000;
+    @media (prefers-color-scheme: dark) {
+        color: #aaa;
+    }
+}
+
+#prev {
+	order: 0;
+}
+
+#prev::after  {
+	content: "< ";
+}
+
+#all {
+	order: 1;
+}
+
+#next::before  {
+	content: " >";
+}
+
+#next {
+	order: 2;
+}
