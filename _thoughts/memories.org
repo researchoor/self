@@ -1,5 +1,7 @@
 #+TITLE: Memories in Relation to Conciousness
 #+SPOTIFY: 2KDXCctJkNx43Z4b8pE6pS
+#+BANNER: awaken.gif
+#+BANNER_HEIGHT: 60px
 
 I feel like I remember very little. I think it's a problem, but the people I trust tell me in the nicest way that I'm probably being paranoid. And that's part of the problem really is that I can't really tell because well -- I can't remember.
 

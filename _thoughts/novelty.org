@@ -1,5 +1,7 @@
 #+TITLE: The Enemy of Contentment
 #+SPOTIFY: 5DOGn6okZZAqRG899Ou25t
+#+BANNER: dove.gif
+#+BANNER_HEIGHT: 50px
 
 More often my [[memories]] are thematic instead of specific. A series of events compressed into lessons. Easier on the meat proccesor and storage for retrieval and calculations. However I do have a set of stories in my mind that have stuck with me, as if at that moment I was so aware that it permiates all my decisions to this day. And they aren't even that interesting.
 

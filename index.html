@@ -3,4 +3,17 @@ title: lllil.li
 layout: centered
 ---
 
+<div class="column" style="width: 50%">
 <img class="center" src="/static/media/cowboy.gif">
+{% include scroll.html content="welcome to my cyber ranch :) yeehaw" %}
+{% include linebreak.html %}
+<dl>
+{% for collection in site.collections %}
+{% if collection.label != 'posts' %}
+<dt><a href="/{{ collection.label }}">{{ collection.label }}</a></li>
+{% endif %}
+{% endfor %}
+<dt>{% include linebreak.html %}</dt>
+<dt>{% include places.html %}</dt>
+</dl>
+</div>
