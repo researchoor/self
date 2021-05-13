@@ -32,17 +32,7 @@ a {
     content: "<";
 }
 
-#all::after {
-    content: "o";
-    visibility: visible;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
 #all {
-    visibility: hidden;
-    position: relative;
     order: 1;
     margin: 0 2ch;
 }
