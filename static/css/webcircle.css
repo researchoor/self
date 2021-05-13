@@ -13,6 +13,7 @@ body {
 a {
     color: #000;
     white-space: pre;
+    text-decoration: none;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,12 +30,10 @@ a {
 #prev::before  {
     visibility: visible;
     content: "<";
-    text-decoration: none;
 }
 
 #all::after {
     content: "o";
-    text-decoration: none;
     visibility: visible;
     position: absolute;
     top: 0;
@@ -42,20 +41,18 @@ a {
 }
 
 #all {
-    order: 1;
-    margin: 0 2ch;
     visibility: hidden;
     position: relative;
+    order: 1;
+    margin: 0 2ch;
 }
 
 #next::after  {
-    content: ">";
-    text-decoration: none;
     visibility: visible;
+    content: ">";
 }
 
 #next {
-    display: none;
-    order: 2;
     visibility: hidden;
+    order: 2;
 }
