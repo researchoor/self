@@ -10,15 +10,21 @@ body {
 }
 
 a {
-    color: var(--foreground, "#000")
+    color: #000;
     white-space: pre;
+}
+
+@media (prefers-color-scheme: dark) {
+    a {
+        color: #aaa;
+    }
 }
 
 #prev {
     order: 0;
 }
 
-#prev::after  {
+#prev::before  {
     content: " < ";
 }
 
@@ -27,7 +33,7 @@ a {
     margin: 0 2ch;
 }
 
-#next::before  {
+#next::after  {
     content: " > ";
 }
 
