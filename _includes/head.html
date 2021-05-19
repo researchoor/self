@@ -1,6 +1,10 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{ include.title | default: page.title }}</title>
+{% if page.subtitle %}
+<title>{{ page.title}} — {{page.subtitle}}</title>
+{% else %}
+<title>{{ page.title }}</title>
+{% endif %}
 <link rel="stylesheet" href="/static/css/dark.css" media="(prefers-color-scheme: dark)">
 <link rel="stylesheet" href="/static/css/light.css" media="(prefers-color-scheme: light)">
 <link rel="stylesheet" href="/static/css/custom.css">
