@@ -14,10 +14,6 @@ body {
     padding-bottom: 5px;
 }
 
-img {
-    filter: grayscale(1);
-}
-
 div.center {
     position: absolute;
     left: 50%;
