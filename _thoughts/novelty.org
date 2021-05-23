@@ -37,7 +37,7 @@ A general concept when trying to efficiently solve a task using artifical intell
 
 It's a hard task.
 
-[[ /static/media/descent.png ]]
+[[/static/media/descent.png]]
 
 Say you are in a field of hills. It's quite foggy, you can only see so far in front of you.
 
