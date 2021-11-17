@@ -1,4 +1,6 @@
 <div id="footer">
-  {% include banner.html banner=include.banner height=include.banner_height %}
+  {% if include.banner %}
+  {% include banner.html banner=page.banner height=page.banner_height %}
+  {% endif %}
   {% include places.html %}
 </div>

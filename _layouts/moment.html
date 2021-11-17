@@ -1,0 +1,16 @@
+---
+layout: centered
+---
+
+<table class="titlebar">
+  <tr>
+    <td><a href="./">N°</a> {{ page.title }}</td>
+    <td style="text-align: right; width: 35%;">
+      {{ page.loc }}
+    </td>
+  </tr>
+</table>
+<div id="moment">
+  {{ content }}
+</div>
+{% include uibar.html left=page.occ center="<a href='random'>?</a>" right=page.time %}

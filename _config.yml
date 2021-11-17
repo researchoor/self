@@ -10,6 +10,8 @@ collections:
     output: true
   terms:
     output: true
+  moments:
+    output: true
 
 defaults:
   - scope:
@@ -24,5 +26,11 @@ defaults:
       layout: "term"
       subtitle: "a term."
       subtitle_link: "/terms"
+  - scope:
+      type: "moments"
+    values:
+      layout: "moment"
+      subtitle: "a moment."
+      subtitle_link: "/moments"
 org:
   liquid: true

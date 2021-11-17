@@ -1,0 +1,8 @@
+---
+layout: centered
+---
+<script>
+  page = Math.floor(Math.random() * ({{ site.pages.size }} - 1)) + 1;
+  window.location.replace("./" + String(page).padStart(3, "0"));
+</script>
+<p style="text-align: center;">Loading...</p>

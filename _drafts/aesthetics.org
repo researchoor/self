@@ -1,0 +1,9 @@
+#+TITLE: Aesthetics
+#+SPOTIFY:
+#+BANNER:
+
+{% include scroll.html content="I will unfortunatley be tested on my spelling capacity constantly. You can't make me spellcheck." %}
+
+** Process
+** Output
+** Consistency
