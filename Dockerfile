@@ -5,4 +5,4 @@ WORKDIR /app
 RUN gem install bundler
 RUN bundle install
 RUN bundle exec jekyll build
-CMD bundle exec jekyll serve --host lllil.li
+CMD bundle exec jekyll serve --host https://lllil.li
