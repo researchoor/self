@@ -1,8 +1,10 @@
 <div id="header">
-  {% include titlebar.html title=page.title bold_title=true subtitle=page.subtitle subtitle_link=page.subtitle_link %}
+  {% if page.slug == "index" %}
+  {% include titlebar.html title=page.title bold_title=true subtitle=page.subtitle subtitle_link="../" %}
+  {% else %}
+  {% include titlebar.html title=page.title bold_title=true subtitle=page.subtitle subtitle_link="./index.html" %}
+  {% endif %}
   {% if page.spotify %}
   {% include spotify.html id=page.spotify %}
-  {% else %}
-  {% include linebreak.html %}
   {% endif %}
 </div>

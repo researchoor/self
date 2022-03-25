@@ -1,0 +1,18 @@
+#+TITLE: ben friesen — me.
+#+LAYOUT: centerer
+
+This is /me/, maybe.
+
+{% include linebreak.html %}
+
+Here are some [[causes]] that are more important then me. Required reading, otherwise you've proven there are better ways to spend your time.
+
+I like asking [[questions]] and being dissapointed by the answers. Computers are good at coming up with answers so I use them more then I like, but I've gotten good enough to think about them less. 
+
+This was going to be the part where I talk about myself, but I could only think of cultural touch points in reference to a fictional version of myself.
+
+Huh... too bad.
+
+Feel free to listen along instead.
+
+{% include playlist.html id='77jibsKxQ5gfVzsiFT9Tfc' %}

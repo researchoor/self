@@ -12,6 +12,8 @@ collections:
     output: true
   moments:
     output: true
+  questions:
+    output: true
 
 defaults:
   - scope:
@@ -19,18 +21,20 @@ defaults:
     values:
       layout: "thought"
       subtitle: "a thought."
-      subtitle_link: "/thoughts"
   - scope:
       type: "terms"
     values:
       layout: "term"
       subtitle: "a term."
-      subtitle_link: "/terms"
   - scope:
       type: "moments"
     values:
       layout: "moment"
       subtitle: "a moment."
-      subtitle_link: "/moments"
+  - scope:
+      type: "questions"
+    values:
+      layout: "question"
+      subtitle: "a possible answer."
 org:
   liquid: true
