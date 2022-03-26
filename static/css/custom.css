@@ -3,6 +3,11 @@
     src: url("../fonts/IndieFlower-Regular.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: 'courier new';
+    src: url("../fonts/CourierNew-Regular.ttf") format("truetype");
+}
+
 * {
     font-family: 'courier new', 'courier', 'monospace';
     font-size: 13px;
@@ -20,6 +25,11 @@ div.center {
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+div.centerer {
+    text-align: justify;
+    line-height: 2.0;
 }
 
 div.column {
@@ -46,14 +56,24 @@ img.center {
     text-decoration: none;
 }
 
+#header a:hover {
+    text-decoration: underline;
+}
+
+
 #footer a {
     text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
 }
 
 #content {
     text-align: justify;
     margin: 8px 0px;
     filter: grayscale(100%);
+    line-height: 1.25;
 }
 
 #content dl {
@@ -111,7 +131,7 @@ img.center {
     filter: grayscale(100%);
 }
 
-.spotify {
+#spotify {
     margin: 2px 0px;
     width: 100%;
     height: 80px;
@@ -138,6 +158,10 @@ table {
 
 .titlebar a {
     text-decoration: none;
+}
+
+.titlebar a:hover {
+    text-decoration: underline;
 }
 
 table {

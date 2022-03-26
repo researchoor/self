@@ -1,6 +1,6 @@
 <div id="header">
   {% if page.slug == "index" %}
-  {% include titlebar.html title=page.title bold_title=true subtitle=page.subtitle subtitle_link="../" %}
+  {% include titlebar.html title=page.title bold_title=true subtitle=page.subtitle %}
   {% else %}
   {% include titlebar.html title=page.title bold_title=true subtitle=page.subtitle subtitle_link="./index.html" %}
   {% endif %}

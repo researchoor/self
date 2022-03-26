@@ -15,4 +15,6 @@ Huh... too bad.
 
 Feel free to listen along instead.
 
-{% include playlist.html id='77jibsKxQ5gfVzsiFT9Tfc' %}
+{% include recently-played.html id='0HCg8SbHwXuE0rmrIFJ3cg?si=cc8b8970040a4f7f' %}
+{% include linebreak.html %}
+{% include places.html %}

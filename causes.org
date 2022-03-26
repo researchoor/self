@@ -1,7 +1,7 @@
 #+TITLE: causes — do something for once.
 #+LAYOUT: centerer
 
-I've volunteered or donated in person at the following charities. That doesn't mean I'm better then you, just that I have to confirm that they are in fact real and not fronts for a personal paypal wallet.
+I've volunteered or donated in person at the following charities. That doesn't mean I'm better then you, just that I can confirm that they are real and not fronts for a personal paypal wallet.
 
 > [[https://www.blood.ca/en/our-story][Canadian Blood Services]]
 
@@ -9,4 +9,7 @@ I've volunteered or donated in person at the following charities. That doesn't m
 
 > [[https://www.fvgleaners.org][Fraser Valley Gleaners]]
 
-or just donate to your local food bank, they saved my family's lives for fucks sake
+or just donate to your local food bank
+
+{% include linebreak.html %}
+{% include places.html %}
