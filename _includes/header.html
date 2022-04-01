@@ -1,8 +1,12 @@
 <div id="header">
-  {% if page.slug == "index" %}
+  {% if page.subtitle %}
   {% include titlebar.html title=page.title bold_title=true subtitle=page.subtitle %}
   {% else %}
-  {% include titlebar.html title=page.title bold_title=true subtitle=page.subtitle subtitle_link="./index.html" %}
+  {% assign collection_size=page.collection | size | minus: 1 %} 
+  {% assign sub=page.collection | slice: 0, collection_size %} 
+  {% assign subtag='<a href="./">' | append: sub | append: '</a>' %}
+  {% assign subtitle='a ' | append: subtag | append: '.'%}
+  {% include titlebar.html title=page.title bold_title=true subtitle=subtitle %}
   {% endif %}
   {% if page.spotify %}
   {% include spotify.html id=page.spotify %}

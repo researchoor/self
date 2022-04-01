@@ -29,7 +29,7 @@ div.center {
 
 div.centerer {
     text-align: justify;
-    line-height: 2.0;
+    line-height: 1.5;
 }
 
 div.column {
@@ -43,7 +43,8 @@ div.center, div.column {
 }
 
 img {
-    filter: grayscale(100%);
+    filter: grayscale(1);
+    image-rendering: pixelated;
 }
 
 img.center {
@@ -72,7 +73,6 @@ img.center {
 #content {
     text-align: justify;
     margin: 8px 0px;
-    filter: grayscale(100%);
     line-height: 1.25;
 }
 
@@ -127,8 +127,9 @@ img.center {
 
 .banner {
     margin-top: 5px;
+    background-size: auto auto;
     background-position: center bottom;
-    filter: grayscale(100%);
+    image-rendering: pixelated;
 }
 
 #spotify {
@@ -137,7 +138,6 @@ img.center {
     height: 80px;
     frameborder: 0;
     border: 1px var(--highlights) solid;
-    filter: grayscale(100%);
 }
 
 b, h1, h2, h3, h4, a {
@@ -145,6 +145,7 @@ b, h1, h2, h3, h4, a {
 }
 
 a:hover {
+    text-decoration: underline;
     color: var(--foreground);
 }
 
@@ -191,4 +192,27 @@ dt {
 
 .comfy {
     font-family: comfy;
+}
+
+.question-tag {
+    height: 40px;
+    line-height: 40px;
+    margin: 20px 0;
+}
+
+.question-tag a {
+    text-decoration: none;
+}
+
+.question-icon {
+    margin-right: 10px;
+    border: 1px var(--foreground) solid;
+    height: 40px;
+    width: 40px;
+    float: left;
+}
+
+svg:not([fill]) {
+    fill: var(--foreground);
+    image-rendering: pixelated;
 }
