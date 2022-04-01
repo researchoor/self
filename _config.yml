@@ -1,3 +1,5 @@
+url: "http://localhost:4000"
+
 plugins:
   - jekyll-redirect-from
   - jekyll-org
@@ -20,21 +22,17 @@ defaults:
       type: "thoughts"
     values:
       layout: "thought"
-      subtitle: "a thought."
   - scope:
       type: "terms"
     values:
       layout: "term"
-      subtitle: "a term."
   - scope:
       type: "moments"
     values:
       layout: "moment"
-      subtitle: "a moment."
   - scope:
       type: "questions"
     values:
       layout: "question"
-      subtitle: "a possible answer."
 org:
   liquid: true
