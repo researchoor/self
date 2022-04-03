@@ -3,7 +3,7 @@
 
 This is /me/, maybe.
 
-{% include linebreak.html %}
+-----
 
 Here are some [[causes]] that are more important then me. Required reading, otherwise you've proven there are better ways to spend your time.
 
@@ -15,6 +15,8 @@ Huh... too bad.
 
 Feel free to listen along instead.
 
-{% include recently-played.html id='0HCg8SbHwXuE0rmrIFJ3cg?si=cc8b8970040a4f7f' %}
-{% include linebreak.html %}
+{% include spotify.html id='0HCg8SbHwXuE0rmrIFJ3cg?si=cc8b8970040a4f7f' %}
+
+-----
+
 {% include places.html %}

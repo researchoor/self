@@ -144,6 +144,18 @@ b, h1, h2, h3, h4, a {
     color: var(--highlights);
 }
 
+h2::before {
+    content: "> ";
+}
+
+h3::before {
+    content: ">> ";
+}
+
+h4::before {
+    content: ">>> ";
+}
+
 a:hover {
     text-decoration: underline;
     color: var(--foreground);
@@ -175,9 +187,9 @@ dt {
     text-overflow: ellipsis;
 }
 
-.linebreak {
-    margin: 12px 0px 8px 0px;
-    border-bottom: 1px var(--foreground) solid;
+hr {
+    margin: 15px 0px;
+    border-top: 1px var(--foreground) solid;
 }
 
 .src {

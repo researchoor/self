@@ -16,7 +16,7 @@ Instead I'd argue that goals don't define where you end up at all. This isn't to
 
 What really defines who I am in the future is based on many small choices I make with no direct relation to longterm strategy or planning. Like the butterfly effect, but for real decisions that you can actually measure. Metrics defined by attitude.
 
-** Values/Metrics
+* Values/Metrics
 
 So what do I put in the soup for Jim Sullivan to simmer? More importantly where does a cowboy fall in my mental model of things to be. Because if you have somehow read to this point, you've learned that nothing I think about can be genuine or real apparently.
 
@@ -27,7 +27,7 @@ The current human typing this thinks most of his decisions come down to two fact
 
 The thought of being a cowboy probably came up as a result of recent life events, but only really latched too my melting brain as it can be well defined by these forces. A high ego, high isolation concept. Playing for self, outside society.
 
-** Charting
+* Charting
 
 One of the beauties of oversimplification is how easy it is to visulize. When working two easily defined vectors we can make a nice chart for the purpose of plotting.
 
@@ -52,7 +52,7 @@ To contrast it we can compare to some other mental aesthetics:
 
 This example makes it pretty clear, which is why I came to this charting conclusion in the first place.
 
-** Decision Making
+* Decision Making
 
 So if you wanted to get something practical out of this, unlike me, I would consider the following things:
 
