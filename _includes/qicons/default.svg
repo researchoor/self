@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 40 40">
+  {% for i in (0..39) %}
+  <rect width="1" height="1" x="{{39 | minus: i}}" y="{{i}}"></rect>
+  <rect width="1" height="1" y="{{39 | minus: i}}" x="{{i}}"></rect>
+  {% endfor %}
+</svg>

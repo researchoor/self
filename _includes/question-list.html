@@ -1,0 +1,4 @@
+{% assign names = include.names | split: "," %}
+{% for name in names %}
+{% include question-tag.html name=name %}
+{% endfor %}
