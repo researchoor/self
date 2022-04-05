@@ -187,9 +187,9 @@ dt {
     text-overflow: ellipsis;
 }
 
-hr {
-    margin: 15px 0px;
-    border-top: 1px var(--foreground) solid;
+.linebreak {
+    margin: 12px 0px 8px 0px;
+    border-bottom: 1px var(--foreground) solid;
 }
 
 .src {
