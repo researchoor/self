@@ -22,7 +22,7 @@ Big things are bad.
 
 So instead of complaining about big things, here are some small things I've enjoyed lately for a change of pace:
 
------
+{% include linebreak.html %}
 
 * Wide Ocean Big Jacket
 
@@ -44,7 +44,7 @@ There's two people with paddles, a pitcher, a bunch of people in the field and p
 
 Maybe by game three I'll understand how anyone get's points.
 
------
+{% include linebreak.html %}
 
 * Vesper Flights
 

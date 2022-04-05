@@ -1,6 +1,17 @@
-#+TITLE: questions
-#+QUESTIONS: [1,2,3]
-#+STATUS: Answered
-#+ANSWER: WOWOW
+#+TITLE: Do I have questions?
+#+SUBTITLE: maybe.
+#+LAYOUT: small-question
+#+STATUS: true
 
-Who Knows?
+{% for collection in site.collections %}
+{% if collection.label == page.collection %}
+{% assign amt = collection.docs | size %}
+{% endif %}
+{% endfor %}
+
+Looks like I have {{ amt }} of 'em. I doubt I need more really.
+
+{% include question-list.html names='xtext,vps,rounded,self,srs' %}
+
+Honestly I think that's all of them.
+
