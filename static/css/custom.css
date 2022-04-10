@@ -53,6 +53,10 @@ img.center {
     margin-right: auto;
 }
 
+code {
+    font-style: italic;
+}
+
 #header a {
     text-decoration: none;
 }
@@ -103,9 +107,20 @@ img.center {
     flex-direction: column;
 }
 
+
+ol {
+    padding-left: 26px;
+}
+
+ul {
+    padding-left: 16px;
+    list-style-type: square;
+}
+
 #moment ul {
     text-align: left;
 }
+
 
 #content img {
     display: block;
@@ -113,8 +128,8 @@ img.center {
     margin-right: auto;
     margin: 15px 0 15px 0;
     padding: 25px 0 25px 0;
-    border-top: 1px var(--foreground) solid;
-    border-bottom: 1px var(--foreground) solid;
+    border-top: 1px var(--foreground) dashed;
+    border-bottom: 1px var(--foreground) dashed;
     width: 100%;
 }
 
@@ -187,14 +202,21 @@ dt {
     text-overflow: ellipsis;
 }
 
-.linebreak {
+.linebreak, .dotbreak {
     margin: 12px 0px 8px 0px;
+}
+
+.linebreak {
     border-bottom: 1px var(--foreground) solid;
 }
 
+.dotbreak {
+    border-bottom: 1px var(--foreground) dashed;
+}
+
 .src {
+    padding: 12px;
     border: 1px var(--foreground) solid;
-    padding: 15px;
     white-space: pre-wrap;       /* css-3 */
     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
     white-space: -pre-wrap;      /* Opera 4-6 */

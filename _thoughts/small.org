@@ -28,9 +28,11 @@ So instead of complaining about big things, here are some small things I've enjo
 
 This isn't a video game review site from 2014, so I'll try to avoid nerd shit. However, [[https://wideoceanbigjacket.com/][WOBJ]] is published by [[https://tenderclaws.com/][Tender Claws]]. They're one of the few groups I actually trust to make video game stories worth investing time into. While they didn't develop it, I'd like to think they have good taste.
 
+[[/static/media/wobj.png]]
+
 Uplifting, but imperfect. Funny, but grounded. Telling, but not preachy. And most importantly short. A story about time, place, and family told in the context of a camping trip.
 
-[[/static/media/wobj.png]]
+{% include linebreak.html %}
 
 * Saturday Cricket
 
@@ -50,9 +52,11 @@ Maybe by game three I'll understand how anyone get's points.
 
 While not inherent to [[https://www.penguinrandomhouse.ca/books/568165/vesper-flights-by-helen-macdonald/9780735235502][Vesper Flights]], it really has been an enjoyable experience reading a collection of essays over a traditional novel. Books are big ∴ bad -- Essays are small ∴ good. I find myself more capable of taking the time to read a single essay. It requires little of my terrible memory to pick up weeks later, and I can easily finish an essay in a single sitting even though I read at a 2nd grade level.
 
+[[/static/media/vesper.png]]
+
 It's impossible for me to recall everything told, considering the long breaks between reading sessions, I have had one take away. Nature is similar to an illusion -- knowledge may reduce the mystery, but it does deepen the magic.
 
-[[/static/media/vesper.png]]
+{% include linebreak.html %}
 
 * Names
 
