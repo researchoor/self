@@ -11,4 +11,3 @@ EOF
 git add _links/$1.html
 git commit -q -m "$1 -> $2"
 git push -q
-git push -q gitlab master

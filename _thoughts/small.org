@@ -52,7 +52,7 @@ Maybe by game three I'll understand how anyone get's points.
 
 While not inherent to [[https://www.penguinrandomhouse.ca/books/568165/vesper-flights-by-helen-macdonald/9780735235502][Vesper Flights]], it really has been an enjoyable experience reading a collection of essays over a traditional novel. Books are big ∴ bad -- Essays are small ∴ good. I find myself more capable of taking the time to read a single essay. It requires little of my terrible memory to pick up weeks later, and I can easily finish an essay in a single sitting even though I read at a 2nd grade level.
 
-[[/static/media/vesper.png]]
+{% include invertible.html path='/static/media/vesper.png' %}
 
 It's impossible for me to recall everything told, considering the long breaks between reading sessions, I have had one take away. Nature is similar to an illusion -- knowledge may reduce the mystery, but it does deepen the magic.
 

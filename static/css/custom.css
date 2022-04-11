@@ -96,6 +96,24 @@ code {
     border: 1px var(--foreground) solid;
 }
 
+#content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 15px 0 15px 0;
+    padding: 25px 0 25px 0;
+    border-top: 1px var(--foreground) dashed;
+    border-bottom: 1px var(--foreground) dashed;
+    width: 100%;
+}
+
+#content blockquote {
+    padding: 0px;
+    margin: 15px 0;
+    border-top: 1px var(--foreground) dashed;
+    border-bottom: 1px var(--foreground) dashed;
+}
+
 #moment {
     border-top: 1px var(--foreground) solid;
     border-bottom: 1px var(--foreground) solid;
@@ -106,7 +124,6 @@ code {
     align-content: center;
     flex-direction: column;
 }
-
 
 ol {
     padding-left: 26px;
@@ -121,17 +138,6 @@ ul {
     text-align: left;
 }
 
-
-#content img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 15px 0 15px 0;
-    padding: 25px 0 25px 0;
-    border-top: 1px var(--foreground) dashed;
-    border-bottom: 1px var(--foreground) dashed;
-    width: 100%;
-}
 
 .box {
     border: 1px var(--highlights) solid;
@@ -250,3 +256,33 @@ svg:not([fill]) {
     fill: var(--foreground);
     image-rendering: pixelated;
 }
+
+.symbols tr td {
+    padding: 0px !important;
+    border: 0px !important; 
+}
+
+.symbols {
+    border: 0px !important; 
+}
+
+.symbol {
+    display: block;
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 0px !important; 
+}
+
+.invertible {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    .invertible, .symbol {
+        filter: invert(1);
+    }
+}
+
+

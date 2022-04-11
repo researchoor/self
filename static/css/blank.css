@@ -1,0 +1,19 @@
+* {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+    * {
+        background: #000;
+    }
+    img {
+        filter: invert(1);
+    }
+}

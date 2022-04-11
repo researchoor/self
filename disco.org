@@ -44,9 +44,9 @@ THE HANGED MAN --- Because you're a copparooni. Look at all of them go! Do you w
 
 {% include dotbreak.html %}
 
-MAIL COLLECTION BOX --- This "Poste L'AAventurier" mail collection box has been heavily vandalized with graffito. A closer inspection reveals two bullet holes in the front.
+MAIL COLLECTION BOX --- This "Poste L'Aventurier" mail collection box has been heavily vandalized with graffiti. A closer inspection reveals two bullet holes in the front.
 
-YOU --- "Good mail delicery box." (Pat the box.)
+YOU --- "Good mail delivery box." (Pat the box.)
 
 MAIL COLLECTION BOX --- The box seems happy.
 
@@ -104,7 +104,7 @@ REACTION SPEED [Easy: Success] --- Wait. Did he just say ​*Wompty-Dompty-Dom C
 
 SUGGESTION [Easy: Success] --- He did it! He said ​*Wompty-Dompty-Dom Centre​* like it's the most natural thing in the world.
 
-ENCYCLOPEDIA [Easy: Success] --- What the hell ​*is​* a Wompty-Dompty-Dom Centre? Ans who the hell are Keith and Guy Joost?!
+ENCYCLOPEDIA [Easy: Success] --- What the hell ​*is​* a Wompty-Dompty-Dom Centre? And who the hell are Keith and Guy Joost?!
 
 {% include dotbreak.html %}
 
@@ -112,7 +112,7 @@ ENCYCLOPEDIA [Easy: Success] --- What the hell ​*is​* a Wompty-Dompty-Dom Ce
 
 {% include dotbreak.html %}
 
-LENA, THE CRYPTOZOOLOGIST'S WIFE --- "But now we're both getting od, and he's still working himself sick out in those reeds, looking for it..." She shakes her head, still unable to meet your eyes. "But what if I was just ​*wrong​*? I think I was..."
+LENA, THE CRYPTOZOOLOGIST'S WIFE --- "But now we're both getting old, and he's still working himself sick out in those reeds, looking for it..." She shakes her head, still unable to meet your eyes. "But what if I was just ​*wrong​*? I think I was..."
 
 KIM KITSURAGI --- The lieutenant opens his notebook but doesn't write anything.
 
@@ -142,9 +142,11 @@ VISUAL CALCULUS --- How old are ​*you​*? That's where this is going. Forty-f
 
 {% include dotbreak.html %}
 
+#+BEGIN_COMMENT
 TITUS HARDIE --- "Why not? You suck on that gun like someone tore you a brand new asshole."
 
 {% include dotbreak.html %}
+#+END_COMMENT
 
 YOU --- Do it.
 

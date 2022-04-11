@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>
+            {% if page.prefix %}
+            {{ page.prefix }}
+            {% endif %}
+            {{ page.title }}
+            {% if page.subtitle %}
+            — {{ page.subtitle }}
+            {% endif %}
+        </title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="/static/media/icon.svg" type="image/svg+xml">
+        <link rel="stylesheet" href="/static/css/blank.css">
+    </head>
+    <body>
+        {{ content }}
+    </body>
+</html>

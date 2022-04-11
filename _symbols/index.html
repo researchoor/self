@@ -1,0 +1,28 @@
+---
+title: symbols
+subtitle: trademarks.
+layout: blank
+---
+
+{% assign symbols = site.collections | where: "label", "symbols" | first %}
+{% assign amt = symbols.files | size %}
+{% assign rows = amt | divided_by: 10 %}
+{% assign columns = 10 | minus: 1 %}
+
+<table class="symbols">
+    {% for i in (0..rows) %}
+    <tr>
+        {% for j in (0..columns) %}
+        {% assign current = i | times: 10 | plus: j | plus: 1%}
+        {% if amt < current %}
+        {% break %}
+        {% endif %}
+        <td>
+            <a href="/symbols/{{current}}.png">
+                <img src="/symbols/{{current}}.png"
+            </a>
+        </td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>

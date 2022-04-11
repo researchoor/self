@@ -8,8 +8,8 @@ This is some of /[[me]]/, at least some work.
 I'm profesionally fullstack in the ways that matter. Technology I use comes second to solving problems. However my active toolkit usually involves /python/, /C/, /javascript/, and /bash/.
 
 If you want to see some highlights check out:
-- [[https://github.com/resloved/vps][My VPS setup]]
-- [[https://github.com/resloved/self][How this website is generated]]
+- [[https://github.com/resloved/vps][My VPS setup using Docker]]
+- [[https://github.com/resloved/self][How this website is statically generated using Jekyll]]
 - [[https://github.com/resloved/i3][My i3 Rounded Corners Patch]]
 - [[https://github.com/resloved/xtext][Animating arbitrary text on X]]
 

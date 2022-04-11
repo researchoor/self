@@ -14,6 +14,8 @@ collections:
     output: true
   questions:
     output: true
+  symbols:
+    output: true
 
 defaults:
   - scope:
@@ -32,5 +34,6 @@ defaults:
       type: "questions"
     values:
       layout: "question"
+
 org:
   liquid: true
