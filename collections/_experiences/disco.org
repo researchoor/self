@@ -109,7 +109,7 @@ ENCYCLOPEDIA [Easy: Success] --- What the hell ​*is​* a Wompty-Dompty-Dom Ce
 
 {% include dotbreak.html %}
 
-"...you may be thinking, 'But fire crackles!' No, homes, that's the material that's burning. The flmaes themselves are without sound."
+"...you may be thinking, 'But fire crackles!' No, homes, that's the material that's burning. The flames themselves are without sound."
 
 {% include dotbreak.html %}
 
