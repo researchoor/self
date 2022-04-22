@@ -87,7 +87,7 @@ I liked this one though:
 
 {% include invertible.html path='/static/media/artifact.png' %}
 
-Making a simple GAN via `keras` is cool and all, but a little trite really. That novelty is long gone.
+Making a simple GAN via =keras= is cool and all, but a little trite really. That novelty is long gone.
 
 Don't get me wrong there is a ton of bleeding edge interesting work with AI in an arts and visual capacity, but not at my level of NN understanding.
 
