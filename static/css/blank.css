@@ -9,11 +9,18 @@ img {
     width: 100%;
 }
 
+img:hover {
+    filter: invert(1);
+}
+
 @media (prefers-color-scheme: dark) {
     * {
         background: #000;
     }
     img {
         filter: invert(1);
+    }
+    img:hover {
+        filter: invert(0);
     }
 }

@@ -1,0 +1,4 @@
+#+TITLE: Can you add rounded corners to i3?
+#+LAYOUT: short
+
+Answer: [[https://github.com/resloved/i3][i3-rounded]]

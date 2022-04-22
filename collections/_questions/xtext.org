@@ -1,0 +1,4 @@
+#+TITLE: Can you animate text on an X screen?
+#+LAYOUT: short
+
+Answer: [[https://github.com/resloved/xtext][xtext]]

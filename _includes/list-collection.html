@@ -1,0 +1,12 @@
+<table class="collection-list">
+{% for item in include.collection %}
+    {% if item.url != page.url %}
+    <tr>
+        <td>{{ include.pre }}<a href="{{ item.url | remove: '.html' }}">{{ item.title | default: item.slug }}</a></td>
+        {% if item.category %}
+            <td style="text-align: right !important;">[{{ item.category }}]</td>
+        {% endif %}
+    </tr>
+    {% endif %}
+{% endfor %}
+</table>

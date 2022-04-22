@@ -1,0 +1,18 @@
+#+TITLE: How should I host my own stuff?
+
+As simply and frugally as possible ideally.
+
+Currently I need to be able to host:
+- This website
+- A [[https://github.com/matrix-org/synapse][synapse]] instance
+- Any dumb webapp idea I come up with at any moment
+- Preferably containers
+
+Pretty attainable.
+
+* Nginx
+* Self
+* Synapse
+* Watchtower
+
+As of now it's all pretty functional on a minimal $5/month VPS @ [[https://vultr.com][vultr]] which is good enough for me.

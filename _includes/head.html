@@ -4,9 +4,9 @@
   {% if page.prefix %}
   {{ page.prefix }}
   {% endif %}
-  {{ page.title }}
+  {{ page.title | strip_html }}
   {% if page.subtitle %}
-  — {{ page.subtitle }}
+  — {{ page.subtitle | strip_html }}
   {% endif %}
 </title>
 <link rel="stylesheet" href="/static/css/dark.css" media="(prefers-color-scheme: dark)">

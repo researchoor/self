@@ -1,0 +1,74 @@
+#+TITLE: How should I represent n​oise as text?
+
+If I really want to start hosting a blog that no one will read I need to set a few ground rules:
+
+- Be able to write the post using org
+- Have some way to play an attached song while reading
+- Have a banner image at the bottom like a terrible forum user tag
+
+* org-mode
+Using org for writing is a bit of a no brainer for me. It's the primary way I write any extended or short form text. And more importantly it exports to anything!
+
+If you want my terse pitch for org-mode, I've got a bit in my [[emacs][configuration]] for emacs that doubles as a "question".
+
+Unfortunatly I am not playing to it's strengths.
+
+As of now I'm using a jekyll plugin called =jekyll-org=. Pretty straight forward.
+
+However it's current gem is a version from 2019. I could use a =git submodule= if I cared enough to get the most recent commits, but I don't think that would solve the ongoing kinks that I run into my day to day of writing posts:
+
+- including content (with =#+INCLUDE= for example) from a seperate org-file does not render as you would expect
+- using =liquid= tags are very binary, a post either renders them or doesn't, there is no pick and choose
+- only the =#+TAGS= header parses as a list, can't have proper arbitrary header lists
+- when I include "no" in a document's title, say for example "noise", it evaluates as =false=. Insane. I've used a [[https://en.wikipedia.org/wiki/Zero-width_space][zero-width]] space to workaround it for now (which is literally reccomended in the org-mode [[https://orgmode.org/manual/Escape-Character.html][docs]])
+- using =#+ATTR_HTML= to try an alter an image does not affect it's export
+
+In the longterm I think it would be for the best to properly just use =org-publish= for my static generation. Or at least use something like [[https://github.com/bmaland/happyblogger][this]] that lets you control the org document rendering before jekyll gets its hands on it.
+
+* Spotify
+For the music I originally thought of hosting myself and building a custom player, but I'm not exactly looking to start an open case by using =github=. It would have had the upside of allowing me to use my own player. Oh well.
+
+Instead I'm just using a =spotify= embed as a =jekyll= include:
+
+#+BEGIN_SRC html
+  <iframe
+       id=spotify
+       src="https://open.spotify.com/embed/track/ID"
+       allow="encrypted-media">
+  </iframe>
+#+END_SRC
+
+Simply include a spotify track ID in the org header arguments:
+
+#+BEGIN_SRC
+#+SPOTIFY: 2sEmZge5ZfzrFrDGFJbkyP
+#+END_SRC
+
+and you'll get:
+
+{% include spotify.html id='2sEmZge5ZfzrFrDGFJbkyP' %}
+
+Well in this case I just simply included it in my org doc, but you get the point.
+
+* Banner
+As apposed to doing a simple image, I really wanted to have a proper sprawling, repeating, banner. Which is pretty easy:
+
+#+BEGIN_SRC html
+<div
+    class="box banner"
+    style="background-image: url(/static/media/banner.gif);
+           height: 40px">
+</div>
+#+END_SRC
+
+and again in my =org= documents header arguments:
+
+#+BEGIN_SRC
+#+BANNER: stars.gif
+#+END_SRC
+
+results in:
+
+{% include banner.html banner='stars.gif'%}
+
+simple.

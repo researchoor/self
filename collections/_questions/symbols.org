@@ -1,0 +1,94 @@
+#+TITLE: What does an AI generated logo look like?
+
+I'm a big fan of the "Trade Marks & Symbols" series by Yasaburo Kuwayama.
+
+It's largely a collection of black and white logos.
+
+{% include invertible.html path='/static/media/marked.png' %}
+
+I think it would make for a good image set. Each of the volumes include 1000+ high quality symbols with references.
+
+Pretty sweet.
+
+And what other way should you test a set then with whatever the current buzz word is. Maybe I'll throw it into a GAN network and see what happens.
+
+* Data Extraction and Cleaning
+
+To start though we do have to figure out how to actually get uniform images to work with.
+
+Here's an example page spread:
+
+{% include invertible.html path='/static/media/spread.png' %}
+
+There's a couple clear things to note:
+
+1. There's an apparent uniform grid used across pages. Three columns by four rows. Even when a larger logo is on the page, it seems to take up a 2x2 section.
+2. Each page has the an even amount of whitespace below the logo grid.
+3. There is variance in the logo alignment. In centering, position of the logos reference number, and sometimes there is even a little description or title.
+4. The scans orientation aren't perfect. Whatever method I use has to be flexible enough to handle slight degrees of rotation.
+
+We can use some pretty simple =imagemagick= commands to harvest some logos:
+
+** Split into Pages
+   First cut off 616px from the bottom:
+   #+BEGIN_SRC sh
+     mogrify -gravity South -chop 0x616 'page-*' 
+   #+END_SRC
+   Split the spread into two halves:
+   #+BEGIN_SRC sh
+     convert 'page-*' -crop 50%x100% 'half-%d.png' 
+   #+END_SRC
+   Remove 120 px from the right side:
+   #+BEGIN_SRC sh
+     mogrify -gravity East -chop 120x0 'half-*'
+   #+END_SRC
+** Cut tiles
+   Cut into 3x4 tiles:
+   #+BEGIN_SRC sh
+     convert 'half-*' -crop 3x4@ 'tile-%d.png' 
+   #+END_SRC
+   Remove 84px from the left of each tile:
+   #+BEGIN_SRC sh
+     mogrify -resize '616x616>' -gravity West -extent 616x616 'tile-*' 
+   #+END_SRC
+** Fuzzy Crop
+   #+BEGIN_SRC sh
+     convert 'tile-*' \
+         -fuzz 25% \
+         -trim +repage 'trim-%d.png'
+     convert 'trim-*' \
+         -gravity center \
+         -background white \
+         -extent 616x616 \
+         -monitor 'centered-%d.png'
+   #+END_SRC
+
+Generally this approach worked well enough over manually cropping painstakingly. After a quick review it looks like I had a ~90% success rate.
+
+Cool.
+
+The success rate is slightly smaller if you consider loss of reference number or title a failure. It can be a casualty of the fuzzy cropping or manual clean up.
+
+And as for results, here's some random examples:
+
+{% include symbols.html rows=1 columns=4 %}
+
+go to [[/symbols][/symbols]] if you want to check out the whole set.
+
+* Symbol Generation via GAN
+
+It went as well as expected. Here's a run over many epochs:
+
+{% include invertible.html path='/static/media/epochs.gif' %}
+
+There was some cool artifacting, but to actually get decent results I'd have to have a much larger set and do some more thorough tuning.
+
+I liked this one though:
+
+{% include invertible.html path='/static/media/artifact.png' %}
+
+Making a simple GAN via `keras` is cool and all, but a little trite really. That novelty is long gone.
+
+Don't get me wrong there is a ton of bleeding edge interesting work with AI in an arts and visual capacity, but not at my level of NN understanding.
+
+Pretty sure [[https://magenta.tensorflow.org/svg-vae][decoding as an SVG]] or using categorical data with [[https://github.com/NVlabs/stylegan][StyleGAN]] are within my capabilities, but I'd have to come up with a better set first.

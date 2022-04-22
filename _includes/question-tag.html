@@ -1,14 +1,6 @@
-{% for collection in site.collections %}
-  {% if collection.label == page.collection %}
-    {% for page in collection.docs %}
-      {% if page.slug == include.name %}
-        {% assign question = page %}
-      {% endif %}
-    {% endfor %}
-  {% endif %}
-{% endfor %}
+{% assign question_doc = site.questions | where: "slug", include.question_name | first %}
 
 <div class="question-tag">
-  <a href="./{{ name }}">{% include question-icon.html name=include.name %}</a>
-  <p><a href="./{{ name }}">{{ question.title }}</a></p>
+  <a href="./{{ include.question_name }}">{% include question-icon.html question=question_doc %}</a>
+  <p><a href="./{{ include.question_name }}">{{ question_doc.title }}</a></p>
 </div>

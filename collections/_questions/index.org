@@ -1,0 +1,20 @@
+#+TITLE: Do I have questions?
+#+SUBTITLE: maybe.
+#+SPOTIFY: 7K8H0WvqkEws5nMyyV3FyX
+#+LAYOUT: short
+
+{% assign collection = site.collections | where: 'label', page.collection | first %}
+
+Looks like I have {{ collection.docs | size }} questions. I really doubt I'll have more.
+
+{% include question-item.html question_name='computers' %}
+
+Oh you're still here? These might be useful then:
+
+{% include question-list.html questions='analog,dirt' %}
+
+{% assign types = site.git.last_commit.commit_date | split: ' ' %}
+
+That's all.
+
+

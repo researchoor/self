@@ -1,0 +1,9 @@
+{% unless page.skip_title %}
+{% include header.html %}
+{% endunless %}
+<div id="content">
+    {{ include.content }}
+</div>
+{% unless page.skip_footer %}
+{% include footer.html %}
+{% endunless %}

@@ -1,0 +1,3 @@
+#+TITLE: How should I represent progress?
+
+{% include question-item.html question_name='icons' %}

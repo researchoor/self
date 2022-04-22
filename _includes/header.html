@@ -1,14 +1,25 @@
 <div id="header">
   {% if page.subtitle %}
-  {% include titlebar.html title=page.title bold_title=true subtitle=page.subtitle %}
+    {% include titlebar.html title=page.title bold_title=true subtitle=page.subtitle %}
   {% else %}
-  {% assign collection_size=page.collection | size | minus: 1 %} 
-  {% assign sub=page.collection | slice: 0, collection_size %} 
-  {% assign subtag='<a href="./">' | append: sub | append: '</a>' %}
-  {% assign subtitle='a ' | append: subtag | append: '.'%}
-  {% include titlebar.html title=page.title bold_title=true subtitle=subtitle %}
+    {% assign collection_size=page.collection | size | minus: 1 %} 
+    {% assign sub=page.collection | slice: 0, collection_size %} 
+    {% assign subtag='<a href="./">' | append: sub | append: '</a>' %}
+    {% assign start=sub | slice: 0 %}
+  
+    {% assign subtitle='a ' | append: subtag | append: '.'%}
+    {% if "aeiou" contains {{start}} %}
+      {% assign subtitle='an ' | append: subtag | append: '.'%}
+    {% endif %}  
+
+    {% include titlebar.html title=page.title bold_title=true subtitle=subtitle %}
+  
   {% endif %}
+
   {% if page.spotify %}
-  {% include spotify.html id=page.spotify %}
+    {% include spotify.html id=page.spotify %}
+  {% else %}
+    {% include linebreak.html %}
   {% endif %}
+
 </div>

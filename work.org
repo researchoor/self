@@ -1,5 +1,6 @@
 #+TITLE: ben friesen — work.
-#+LAYOUT: centerer
+#+LAYOUT: short
+#+SKIP_TITLE: true
 
 This is some of /[[me]]/, at least some work.
 
@@ -14,7 +15,3 @@ If you want to see some highlights check out:
 - [[https://github.com/resloved/xtext][Animating arbitrary text on X]]
 
 Think it's pretty cool? [[mailto:work@lllil.li][work@lllil.li]]
-
-{% include linebreak.html %}
-
-{% include places.html %}

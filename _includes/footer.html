@@ -1,6 +1,10 @@
 <div id="footer">
-  {% if include.banner %}
+  {% if page.banner %}
   {% include banner.html banner=page.banner height=page.banner_height %}
+  {% elsif page.scroll %}
+  {% include scroll.html content=page.scroll %}
+  {% else %}
+  {% include linebreak.html %}
   {% endif %}
   {% include places.html %}
 </div>

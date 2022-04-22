@@ -1,15 +1,9 @@
 <div class="question-icon">
   {% assign folder = "qicons/" %}
-  {% assign file = include.name | append: '.svg' %}
-  {% assign location = folder | append: file %}
-  {% assign path = '_includes/' | append: location %}
-  {% for page in site.html_files %}
-  {% if page.path == path %}
-  {% assign icon = folder | append: page.name  %} 
-  {% include {{ icon }} %}
-  {% endif %}
+  {% if include.question.icon %}
+    {% assign location = folder | append: include.question.icon %}
   {% else %}
-  {% assign icon = folder | append: 'default.svg' %} 
-  {% include {{ icon }} %}
-  {% endfor %}
+    {% assign location = folder | append: 'mark.svg' %}
+  {% endif %}
+  {% include {{ location }} %}
 </div>

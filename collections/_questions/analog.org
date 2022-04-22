@@ -1,0 +1,19 @@
+#+TITLE: Maybe analog techn​ologies?
+#+LAYOUT: short
+#+ICON: ok.svg
+
+Traditionally I haven't been that interested in getting my hands dirty.
+
+I had enough bad feedback in my life to realize my /place/.
+
+And this isn't a means to avoid "blue-collar" work. Oil paints are occult in nature, and I fail to focus a film camera 90% of the time.
+
+A clutz like me falls a lot in a world of potholes. 
+
+{% include dotbreak.html %}
+
+After reading [[https://en.wikipedia.org/wiki/Zen_and_the_Art_of_Motorcycle_Maintenance][Zen and the Art of Motorcycle Maintenance]] I feel obligated to reconsider my pissy reactions to any task with physical tools.
+
+It's not a perfect book, but it probably deserves a formalized [[../thoughts][thought]] or two. More likely it will hiss in my head until another paradigm manages to wriggle through the sludge and I'll claim that snake solves everything.
+
+Anyways bike repairs maybe? I should write that down somewhere.

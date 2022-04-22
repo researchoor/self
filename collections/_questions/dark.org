@@ -1,0 +1,26 @@
+#+TITLE: How do you support dark-mode via CSS?
+
+Simple.
+
+Head:
+
+#+BEGIN_SRC html
+<link rel="stylesheet" href="/static/css/dark.css" media="(prefers-color-scheme: dark)">
+<link rel="stylesheet" href="/static/css/light.css" media="(prefers-color-scheme: light)">
+#+END_SRC
+
+=dark.css= contains:
+
+#+BEGIN_SRC css
+:root {
+    --background: #18181B;
+    --foreground: #FFFFFF;
+    --highlights: #FF0000;
+}
+#+END_SRC
+
+Example:
+
+#+BEGIN_SRC css
+border: 1px var(--highlights) solid;
+#+END_SRC

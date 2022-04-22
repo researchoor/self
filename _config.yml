@@ -3,6 +3,7 @@ plugins:
   - jekyll-org
   - jekyll-git_metadata
 
+collections_dir: collections
 collections:
   links:
     output: true
@@ -16,16 +17,18 @@ collections:
     output: true
   symbols:
     output: true
+  experiences:
+    output: true
 
 defaults:
   - scope:
       type: "thoughts"
     values:
-      layout: "thought"
+      layout: "long"
   - scope:
       type: "terms"
     values:
-      layout: "term"
+      layout: "short"
   - scope:
       type: "moments"
     values:
@@ -33,7 +36,11 @@ defaults:
   - scope:
       type: "questions"
     values:
-      layout: "question"
+      layout: "long"
+  - scope:
+      type: "experiences"
+    values:
+      layout: "long"
 
 org:
   liquid: true

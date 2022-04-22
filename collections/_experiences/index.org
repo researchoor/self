@@ -1,0 +1,11 @@
+#+TITLE: experiences
+#+SUBTITLE: as described.
+#+LAYOUT: centered
+
+you probably shouldn't be here --- go outside.
+
+-----
+
+{% include list-collection.html collection=site.experiences pre='~ ' %}
+
+{% include footer.html %}
