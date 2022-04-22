@@ -60,7 +60,7 @@ We can use some pretty simple =imagemagick= commands to harvest some logos:
          -gravity center \
          -background white \
          -extent 616x616 \
-         -monitor 'centered-%d.png'
+         -monitor 'symbol-%d.png'
    #+END_SRC
 
 Generally this approach worked well enough over manually cropping painstakingly. After a quick review it looks like I had a ~90% success rate.
