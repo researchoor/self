@@ -1,6 +1,7 @@
 ---
 title: version
-layout: centered
+layout: centerer
 ---
 
-<p style="text-align: center;">{{ site.git.last_commit.short_sha }}</p>
+<p>{{ site.git.last_commit.message }}</p>
+<p><< {{ site.git.last_commit.short_sha }} >></p>
