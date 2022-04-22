@@ -30,6 +30,7 @@ div.center {
 
 div.centerer {
     text-align: center;
+    line-height: 2.0;
 }
 
 div.column {
