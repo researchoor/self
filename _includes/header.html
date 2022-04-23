@@ -1,6 +1,6 @@
 <div id="header">
   {% if page.subtitle %}
-    {% include titlebar.html title=page.title bold_title=true subtitle=page.subtitle %}
+    {% include titlebar.html title=page.title subtitle=page.subtitle %}
   {% else %}
     {% assign collection_size=page.collection | size | minus: 1 %} 
     {% assign sub=page.collection | slice: 0, collection_size %} 
@@ -12,8 +12,7 @@
       {% assign subtitle='an ' | append: subtag | append: '.'%}
     {% endif %}  
 
-    {% include titlebar.html title=page.title bold_title=true subtitle=subtitle %}
-  
+    {% include titlebar.html title=page.title subtitle=subtitle %}
   {% endif %}
 
   {% if page.spotify %}
