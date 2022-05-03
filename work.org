@@ -2,7 +2,7 @@
 #+LAYOUT: short
 #+SKIP_TITLE: true
 
-This is some of /[[me]]/, at least some work.
+This is some of /[[me]]/, or at least some of my work.
 
 {% include linebreak.html %}
 
