@@ -2,11 +2,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>
   {% if page.prefix %}
-  {{ page.prefix }}
+    {{ page.prefix }}
   {% endif %}
-  {{ page.title | strip_html }}
+    {{ page.title | strip_html }}
   {% if page.subtitle %}
-  — {{ page.subtitle | strip_html }}
+    — {{ page.subtitle | strip_html }}
+  {% elsif page.collection %}
+    {% assign collection_size=page.collection | size | minus: 1 %} 
+    {% assign sub=page.collection | slice: 0, collection_size %} 
+    {% assign subtag='<a href="./">' | append: sub | append: '</a>' %}
+    {% assign start=sub | slice: 0 %}
+  
+    {% assign subtitle='a ' | append: subtag | append: '.'%}
+    {% if "aeiou" contains {{start}} %}
+      {% assign subtitle='an ' | append: subtag | append: '.'%}
+    {% endif %}  
+    — {{ subtitle | strip_html }}
   {% endif %}
 </title>
 <link rel="stylesheet" href="/static/css/dark.css" media="(prefers-color-scheme: dark)">
