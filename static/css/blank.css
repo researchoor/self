@@ -7,6 +7,7 @@
 img {
     display: block;
     width: 100%;
+    loading: lazy;
 }
 
 img:hover {
@@ -18,6 +19,7 @@ img:hover {
         background: #000;
     }
     img {
+        background: #fff;
         filter: invert(1);
     }
     img:hover {
