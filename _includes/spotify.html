@@ -1,1 +1,4 @@
-<iframe id=spotify src="https://open.spotify.com/embed/track/{{ include.id }}" allow="encrypted-media"></iframe>
+<script>
+document.write("<iframe id=spotify src='https://open.spotify.com/embed/track/{{ include.id }}' allow='encrypted-media'></iframe>")
+</script>
+<noscript><div id="spotify">¯\_(ツ)_/¯</div></noscript>

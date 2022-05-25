@@ -6,6 +6,22 @@ layout: centered
 
 {% include titlebar.html title=page.title subtitle=page.subtitle %}
 <div id="moment">
-  <p>Click the "<a href='random'>?</a>" to recieve a moment</p>
+    <script>
+     document.write("<p>Click the \"<a href='random'>?</a>\" to recieve a moment</p>")
+    </script>
+    <noscript>
+        {% for item in site.moments %}
+        {% if item.url != page.url and item.slug != "random" %}
+        {{ include.pre }}<a href="{{ item.url | remove: '.html' }}">{{ item.title | default: item.slug }}</a>
+        {% endif %}
+        {% endfor %}
+    </noscript>
 </div>
-{% include uibar.html left="<a href='../'>lllil.li</a>" center="<a href='random'>?</a>" right="<a href='/me'>me</a>." %}
+<section class="uibar">
+    <div><a href='../'>lllil.li</a></div>
+    <div>
+        <script>document.write("<a href='random'>?</a>")</script>
+        <noscript></noscript>
+    </div>
+    <div><a href='/me'>me</a></div>
+</section>

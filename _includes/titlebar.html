@@ -1,15 +1,10 @@
-<table class="titlebar">
-  <tr>
-    <td>{{ include.title }}</td>
-    {% if include.center %}
-    <td style="text-align: center;">{{ include.center }}</td>
-    {% endif %}
-    <td style="text-align: right; width: 35%;">
-      {% if include.subtitle_link %}
+<section class="titlebar">
+    <div>{{ include.title }}</div>
+    <div>
+    {% if include.subtitle_link %}
       <a href="{{ include.subtitle_link }}">{{ include.subtitle }}</a>
-      {% else %}
+    {% else %}
       {{ include.subtitle }}
-      {% endif %}
-    </td>
-  </tr>
-</table>
+    {% endif %}
+    </div>
+</section>

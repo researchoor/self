@@ -69,7 +69,7 @@ Cool.
 
 The success rate is slightly smaller if you consider loss of reference number or title a failure. It can be a casualty of the fuzzy cropping or manual clean up.
 
-And as for results, here's some random examples:
+And as for results, here's some examples:
 
 {% include symbols.html rows=1 columns=4 %}
 

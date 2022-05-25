@@ -199,6 +199,8 @@ ul li::before {
     height: 80px;
     frameborder: 0;
     border: 1px var(--foreground) solid;
+    text-align: center;
+    line-height: 80px;
 }
 
 b, h1, h2, h3, h4, a {
@@ -240,16 +242,26 @@ table {
     border-spacing: 0;
 }
 
-.titlebar {
+section {
     padding: 16px 0;
+    display: grid;
 }
 
-.titlebar a {
+section.titlebar {
+    grid-template-columns: 1fr 1fr;
+}
+
+section.uibar {
+    grid-template-columns: 1fr auto 1fr;
+}
+
+section > *:last-child {
+    white-space: nowrap;
+    text-align: right;
+}
+
+section > * > a {
     text-decoration: none;
-}
-
-.titlebar a:hover {
-    text-decoration: underline;
 }
 
 dt {

@@ -1,15 +1,17 @@
 ---
 layout: centered
 ---
-<table class="titlebar">
-  <tr>
-    <td>N° {{ page.title }} — {{ page.loc }}</td>
-    <td style="text-align: right; width: 30%;">
-      a <a href="./">moment</a>.
-    </td>
-  </tr>
-</table>
+
+{% assign formatted_title = "N° " | append: page.title | append: " — " | append: page.loc %}
+{% include header.html title=formatted_title %}
 <div id="moment">
   {{ content }}
 </div>
-{% include uibar.html left=page.occ center="<a href='random'>?</a>" right=page.time %}
+<section class="uibar">
+    <div>{{ page.occ }}</div>
+    <div>
+        <script>document.write("<a href='random'>?</a>")</script>
+        <noscript></noscript>
+    </div>
+    <div>{{ page.time }}</div>
+</section>

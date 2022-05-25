@@ -1,42 +1,56 @@
-<table class="symbols">
-</table>
+{% assign folder = include.folder | default: "/symbols" %}
+
+<noscript>
+    <table class="symbols">
+        {% for i in (1..include.rows) %}
+        <tr>
+            {% for j in (1..include.columns) %}
+            <td>
+                <a href="{{folder}}/{{ j }}.png">
+                    <img class="symbol" src="{{ folder }}/{{ j }}.png">
+                </a>
+            </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</noscript>
 
 <script>
-
- function generateTable(rows, columns) {
-     {% assign collection = site.collections | where: 'label', 'symbols' | first %}
-     var folder = '/symbols/'
-     var files = [{% for file in collection.files %}"{{ file.name }}",{% endfor %}]
-     
-     tables = document.getElementsByClassName("symbols");
-     table = tables[tables.length-1]
-     for (let i = 0; i < {{include.rows}}; i++) {
-         tr = document.createElement('tr');
-         for (let j = 0; j < {{include.columns}}; j++) {
-             var td = document.createElement('td');
-             
-             var idx = Math.floor(Math.random() * files.length);
-             var symbol = files[idx];
-             
-             var img = document.createElement('img');
-             img.src = folder + symbol;
-             img.setAttribute("class", "symbol");
-             
-             var a = document.createElement('a');
-             a.href = folder + symbol;
-             
-             files.splice(idx, 1);
-             
-             if (files.length == 0) {
-                 return false
-             }
-             
-             a.appendChild(img);
-             td.appendChild(a);
-             tr.appendChild(td);
+ {% assign collection = site.collections | where: 'label', 'symbols' | first %}
+ var folder = '{{ folder }}/'
+ var files = [{% for file in collection.files %}"{{ file.name }}",{% endfor %}]
+ 
+ table = document.createElement("table");
+ table.setAttribute("class", "symbols");;
+ 
+ for (let i = 0; i < {{include.rows}}; i++) {
+     tr = document.createElement('tr');
+     for (let j = 0; j < {{include.columns}}; j++) {
+         var td = document.createElement('td');
+         
+         var idx = Math.floor(Math.random() * files.length);
+         var symbol = files[idx];
+         
+         var img = document.createElement('img');
+         img.src = folder + symbol;
+         img.setAttribute("class", "symbol");
+         
+         var a = document.createElement('a');
+         a.href = folder + symbol;
+         
+         files.splice(idx, 1);
+         
+         if (files.length == 0) {
+             break
          }
-         table.appendChild(tr);
+         
+         a.appendChild(img);
+         td.appendChild(a);
+         tr.appendChild(td);
      }
+     table.appendChild(tr);
  }
- generateTable({{include.rows}}, {{include.columns}});
+ script = document.scripts[document.scripts.length-1]
+ script.parentElement.insertBefore(table, script)
 </script>
