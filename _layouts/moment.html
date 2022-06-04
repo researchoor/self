@@ -4,9 +4,12 @@ layout: centered
 
 {% assign formatted_title = "N° " | append: page.title | append: " — " | append: page.loc %}
 {% include header.html title=formatted_title %}
-<div id="moment">
-  {{ content }}
+<div id="content">
+    <div id="moment">
+        {{ content }}
+    </div>
 </div>
+{% include linebreak.html %}
 <section class="uibar">
     <div>{{ page.occ }}</div>
     <div>

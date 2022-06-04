@@ -152,8 +152,6 @@ code {
 }
 
 #moment {
-    border-top: 1px var(--foreground) solid;
-    border-bottom: 1px var(--foreground) solid;
     min-height: 250px;
     display: flex;
     text-align: center;
@@ -163,12 +161,14 @@ code {
 }
 
 ol {
-    padding-left: 26px;
+    padding-left: 2em;
 }
 
 ul {
     padding-left: 0;
     list-style-type: none;
+    text-indent: -1em;
+    padding-left: 1em;
 }
 
 ul li::before {
@@ -248,7 +248,7 @@ section {
 }
 
 section.titlebar {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
 }
 
 section.uibar {
