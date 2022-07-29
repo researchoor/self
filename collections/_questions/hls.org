@@ -1,3 +1,0 @@
-#+TITLE: What protocols are even used for video streaming?
-
-???

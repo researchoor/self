@@ -1,0 +1,98 @@
+#+TITLE: Failing to Communicate the Value of Money
+#+SPOTIFY: 6b7fW1y81upWpOwrMrFAtT
+#+BANNER: makemoneyanim.gif
+#+BANNER_HEIGHT: 50px
+
+{% include scroll.html content='The following is a memory, but might as well be a story. Treat it as such.' %}
+
+Many years ago, I attempted to explain a question I had to friends:
+
+#+begin_quote
+I'm offered the following bet. I'll be given $10,000 if I win a coin flip, if I lose I have to give my life savings of $2,000. Why do I not take the bet?
+#+end_quote
+
+Unfortunatly, I can guarantee that the explanation required 30 more minutes at minimum and it probably came out more like:
+
+#+begin_quote
+Sometimes when I evaluate money, $1 is not $1
+#+end_quote
+
+So unexpectedly they had no idea what I was talking about.
+
+Even assuming that I got around to formulate the first question, we just couldn't get there. These friends are people that I still consider much stronger then me at formal maths and statistics. I assumed that I was in the wrong rather then just terrible at packaging my unformed thoughts.
+
+So for once I'm going to do my past self justice and get to the point.
+
+* Non-linearity
+
+To be more technical:
+
+#+begin_quote
+When evaluating the EV (estimated value) of a monetary bet, money is treated as a linearly valuable property. Why?
+#+end_quote
+
+I think most people would just tell me this is a psychology problem. Humans are simply genetically fitted to be over/under risk tolerant and you'll evaluate all forms of risk to that metric. A simple scaler.
+
+#+begin_src 
+x
+#+end_src
+
+While I don't disagree that there is some degree of risk tolerence to consider, I almost never hear people talk about what is actually happening in these bets. In a $100 coin flip, you don't just win $100 or lose $100. *YOU* are in the same position before the bet, but up or down $100.
+
+This isn't some hypothetical average of every person being on either side of this flip, you have two very discrete scenarios. It's very easy to make two scenarios that aren't linearly comparable.
+
+I'm not even talking about some insane concept. Ask anyone if money buys happiness and you'll get some variation of "no".
+
+#+begin_src 
+x if x < a else a || log(x) || x if x < a else -x
+#+end_src
+
+Inversely -- if you are in a poor position financially, it's often described that people are more likely to make worse financial decisions. Payday loans, lottery tickets, etc. And when using classical EV analysis it's pretty damn obvious that over time a lottery ticket loses you money. But when scraping at the bottom of the barrel, money might perform in a step like function.
+
+#+begin_src 
+0 if x < b else x
+#+end_src
+
+or maybe consider a position where all debt is equal.
+
+#+begin_src 
+0 if x < 0 else x
+#+end_src
+
+You even get to stack all our funny waves into different evaluations.
+
+Won't stop amateur staticians from owning you for not taking up any EV positive bet.
+
+* Abusing Reasonable Choices
+
+Whether conciously or not, the winners of these bets happen to be the functions that gain the most for having the most while having the most.
+
+You can have situations where all agents are acting rationally, while only one will /win/ the bet on average.
+
+From my naive perspective of economics, nearly all modern corporations operate in this way. The calculation for a corporation in this context would simply be:
+
+#+begin_quote
+Find the largest differential between other parties EV of money and the corporations own
+#+end_quote
+
+High growth groups, get to take advantage of "at scale" properties. While individuals at best fall off at some level of financial comfort or at worst must take seemingly high risk positions for their best life time return.
+
+#+begin_src 
+x^2 && sqrt(x)
+#+end_src
+
+In other words we're fucked.
+
+* Perspective
+
+Think of this more as a set of counter examples, then rules.
+
+I don't understand how every individual should consider the value of money. For all I know I'm the only [[/terms/satisfier][satisfier]] in the world.
+
+However --- the fact that these ideas are already so intertwined in our discussion of money makes it seem like everyone is secretly just assuming that everyone else is on the same page. Is this what everyone talks about at parties I don't go to?
+
+This doesn't even just relate to money, but all forms of risk. It feels like a general assumption that disagreements are only caused by lack of rationality instead of individual environments.
+
+Humans are so terrible at preemptively precieving perspectives.
+
+Which clearly includes me. 

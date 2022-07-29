@@ -1,0 +1,43 @@
+#+TITLE: Art and the Hunter-Gatherer
+#+SPOTIFY: 4XoN5kQ4eIRPwCqMQ3U6iN
+#+BANNER: clock.gif
+#+BANNER_HEIGHT: 66px
+
+So the synapses are firing right, like the digital ones. Ya know? Theres the one that beat Jennings right? Or like the chess one --- uhhh big blue?
+
+{% include scroll.html content='Multiple times while writing I had to catch myself from personifying the AI using terms like, dude, homie, etc. Take that as you will.' %}
+
+Say we don't all die as an inevitability. Wild.
+
+What the Fuck are we gonna do?
+
+Well I don't really want to talk about that. Because I don't care and it's not that interesting to me. We'll figure it out. However this train usually choo choos to /art/ station. Right down the /art/ canyon. But what do people mean by that even? Here are some things that people suggest doing when our your needs are met:
+
++ Make music
++ Paint something
++ Maybe like the macaroni thing --- where you glue it in the shape of what little you remember from the before times?
+
+But I can do that now. And you know what people talk about doing now? Reversing time, coming to our senses, hang out with the chimps. I mean they taught me how to open bananas correctly so how smart can I be?
+
+I guess the question I'm really asking is not what is art. Because I hate that, but why.
+
+For example, what was the [[/terms/utility][utility]] of caveman paintings? Teaching? Historical? Decor? Are we day one out the slime looking for an outlet?
+
+That doesn't even consider that half the time you ask someone to define art they describe it as a task that isn't a result of generating utility, but as an out of sight concept.
+
+#+begin_quote
+"The art of pottery isn't your pencils being kept upright in the ceramic mug, it's the decisions you made that led to it toppling over." 
+#+end_quote
+
+- a phantom
+
+I've fallen for it again haven't I? Ok fine.
+
+Art tends to have strong associations with extensialism. Are humans just climbing that pyramid? Sounds pretty maximalized to me.
+
+As far as I can tell art is essentially just an evaluation of caring, at attempt of quality. The rest is either aesthetics, narative or well --- utility.
+
+Maybe there's a reversal of art in a similar vain. The equivalent of fending for yourself in an expressive landscape. As time has passed have individuals been evolutionaly fit to outlet vague concepts visually and orally?
+
+I'd like to think it's some side effect of cognition that is largely a net negative in our "optimization". That makes me feel better.
+

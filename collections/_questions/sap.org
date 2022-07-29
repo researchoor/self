@@ -1,4 +1,0 @@
-#+TITLE: Can I add stat tools to Super Auto Pets?
-#+LAYOUT: short
-
-????

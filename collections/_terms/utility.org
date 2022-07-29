@@ -1,0 +1,12 @@
+The concept of value generated via action. What do I get out of doing X? However utility is often referred to as a resulting metric for easily measurable benefits. Example:
+
+#+begin_quote
+How much does doing X provide food and water?
+#+end_quote
+
+Which is then in turn used with whatever input of effort and resources to calculate the efficiency of said action. 
+
+I don't really know if that's accurate (no word is), but I tend to use it in those more limited terms as to not cause confusion.
+
+Refering to your actions as "maximizing your moral utility" does feel good though.
+
