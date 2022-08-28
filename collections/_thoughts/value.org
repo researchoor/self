@@ -33,9 +33,7 @@ When evaluating the EV (estimated value) of a monetary bet, money is treated as 
 
 I think most people would just tell me this is a psychology problem. Humans are simply genetically fitted to be over/under risk tolerant and you'll evaluate all forms of risk to that metric. A simple scaler.
 
-#+begin_src 
-x
-#+end_src
+{% include invertible.html path='/static/media/x.png' %}
 
 While I don't disagree that there is some degree of risk tolerence to consider, I almost never hear people talk about what is actually happening in these bets. In a $100 coin flip, you don't just win $100 or lose $100. *YOU* are in the same position before the bet, but up or down $100.
 
@@ -43,21 +41,16 @@ This isn't some hypothetical average of every person being on either side of thi
 
 I'm not even talking about some insane concept. Ask anyone if money buys happiness and you'll get some variation of "no".
 
-#+begin_src 
-x if x < a else a || log(x) || x if x < a else -x
-#+end_src
+{% include invertible.html path='/static/media/a.png' %}
+{% include invertible.html path='/static/media/log.png' %}
 
 Inversely -- if you are in a poor position financially, it's often described that people are more likely to make worse financial decisions. Payday loans, lottery tickets, etc. And when using classical EV analysis it's pretty damn obvious that over time a lottery ticket loses you money. But when scraping at the bottom of the barrel, money might perform in a step like function.
 
-#+begin_src 
-0 if x < b else x
-#+end_src
+{% include invertible.html path='/static/media/negative.png' %}
 
 or maybe consider a position where all debt is equal.
 
-#+begin_src 
-0 if x < 0 else x
-#+end_src
+{% include invertible.html path='/static/media/defaults.png' %}
 
 You even get to stack all our funny waves into different evaluations.
 
@@ -77,9 +70,7 @@ Find the largest differential between other parties EV of money and the corporat
 
 High growth groups, get to take advantage of "at scale" properties. While individuals at best fall off at some level of financial comfort or at worst must take seemingly high risk positions for their best life time return.
 
-#+begin_src 
-x^2 && sqrt(x)
-#+end_src
+{% include invertible.html path='/static/media/scale.png' %}
 
 In other words we're fucked.
 
