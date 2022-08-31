@@ -211,7 +211,7 @@ ul li::before {
     height: 80px;
     frameborder: 0;
     border: 1px var(--foreground) solid;
-    background-color: #121212;
+    background-color: #282828;
     border-radius: 0px;
     text-align: center;
     line-height: 80px;
@@ -369,9 +369,6 @@ svg:not([fill]) {
     }
     .symbol:hover {
         filter: invert(0);
-    }
-    #spotify {
-        background-color: #121212;
     }
 }
 
