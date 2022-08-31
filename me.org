@@ -7,7 +7,7 @@ This is /[[me]]/, maybe.
 
 Here are some [[causes]] that are more important then me. Required reading, otherwise you've proven there are better ways to spend your time.
 
-I like asking [[questions]] and being dissapointed by the answers. Computers are good at coming up with answers so I use them more then I like, but I've gotten good enough to think about them less. If you prefer something less cryptic, [[work]] is your stay.
+I like asking [[questions]] and being dissapointed by the answers. Computers are good at coming up with answers so I use them more then I like, but I've gotten good enough to think about them less. Read [[/work][this]] if you want to know what I /do/ in a less cryptic way.
 
 This was going to be the part where I talk about myself, but I could only think of cultural touch points in reference to a fictional version of myself.
 
@@ -15,4 +15,4 @@ Huh... too bad.
 
 Feel free to listen along instead.
 
-{% include spotify.html id='0HCg8SbHwXuE0rmrIFJ3cg?si=cc8b8970040a4f7f' %}
+{% include spotify.html id='7xpaLhkSi43sES005HNlqN' %}
