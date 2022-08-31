@@ -370,6 +370,9 @@ svg:not([fill]) {
     .symbol:hover {
         filter: invert(0);
     }
+    #spotify {
+        background-color: #121212;
+    }
 }
 
 
