@@ -1,8 +1,8 @@
 {% assign sound = site.sounds | where:"title", include.name | first %}
 <div class="sound">
     <a href="{{ sound.link }}"><img src="{{ sound.art }}"></a>
-    <div class="sound-description">
+    <div class="description">
         <p><b>{{ sound.title }}</b> by {{ sound.artist }}</p>
-        <p><i>{{ sound.album }}</i></p>
+        <i>{{ sound.album }}</i>
     </div>
 </div>

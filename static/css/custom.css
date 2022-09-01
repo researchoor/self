@@ -352,6 +352,8 @@ svg:not([fill]) {
     height: 70px;
     border: 1px var(--foreground) solid;
     line-height: 1.75;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .sound img {
@@ -365,17 +367,12 @@ svg:not([fill]) {
     border-right: 1px var(--foreground) solid !important;
 }
 
-.sound .sound-description {
+.sound .description {
     margin-top: 10px;
     margin-left: 85px;
 }
 
-.sound {
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-.sound p {
+.sound .description p {
     text-overflow: ellipsis;
     margin: 0;
     padding: 0;
