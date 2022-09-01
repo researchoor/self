@@ -349,7 +349,7 @@ svg:not([fill]) {
 }
 
 .sound {
-    height: 90px;
+    height: 70px;
     border: 1px var(--foreground) solid;
     line-height: 1.75;
 }
@@ -360,13 +360,14 @@ svg:not([fill]) {
     padding: 0 !important;
     float: left;
     filter: none;
+    image-rendering: auto !important;
     border: 0 !important;
     border-right: 1px var(--foreground) solid !important;
 }
 
 .sound .sound-description {
-    margin-top: 7px;
-    margin-left: 105px;
+    margin-top: 10px;
+    margin-left: 85px;
 }
 
 .sound {
