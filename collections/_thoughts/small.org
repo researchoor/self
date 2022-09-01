@@ -1,5 +1,5 @@
 #+TITLE: Small Things
-#+SPOTIFY: 6bGMai7fcmgBAS9AASU15T
+#+SONG: Penguins
 #+BANNER: key.gif
 #+BANNER_HEIGHT: 50px
 

@@ -16,8 +16,8 @@
     {% include titlebar.html title=title subtitle=subtitle %}
   {% endif %}
 
-  {% if page.spotify %}
-    {% include spotify.html id=page.spotify %}
+  {% if page.song %}
+    {% include sound.html name=page.song %}
   {% else %}
     {% include linebreak.html %}
   {% endif %}

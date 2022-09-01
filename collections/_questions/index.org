@@ -1,6 +1,6 @@
 #+TITLE: Do I have questions?
 #+SUBTITLE: maybe.
-#+SPOTIFY: 7K8H0WvqkEws5nMyyV3FyX
+#+SONG: A Mirror For Two Voices
 #+LAYOUT: short
 
 {% assign collection = site.collections | where: 'label', page.collection | first %}

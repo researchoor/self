@@ -1,5 +1,5 @@
 #+TITLE: The Enemy of Contentment
-#+SPOTIFY: 5DOGn6okZZAqRG899Ou25t
+#+SONG: Smoke
 #+BANNER: dove.gif
 #+BANNER_HEIGHT: 50px
 

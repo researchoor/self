@@ -19,6 +19,7 @@ collections:
     output: true
   experiences:
     output: true
+  sounds:
 
 defaults:
   - scope:

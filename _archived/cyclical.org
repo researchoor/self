@@ -1,5 +1,5 @@
 #+TITLE: Cyclical Thoughts and Where to Find Them
-#+SPOTIFY: 1nFlu9cVAXknq2zQXMHoPk?si=Mvp2b3JURsKRiw0C05fhQA
+#+SONG: 1nFlu9cVAXknq2zQXMHoPk?si=Mvp2b3JURsKRiw0C05fhQA
 #+BANNER: fishbowl.gif
 #+BANNER_HEIGHT: 75px
 

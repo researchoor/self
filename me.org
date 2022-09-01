@@ -13,6 +13,7 @@ This was going to be the part where I talk about myself, but I could only think 
 
 Huh... too bad.
 
+{% include sound.html name='Bring Me to Silence' %}
+
 Feel free to listen along instead.
 
-{% include spotify.html id='7xpaLhkSi43sES005HNlqN' %}

@@ -25,31 +25,6 @@ However it's current gem is a version from 2019. I could use a =git submodule= i
 
 In the longterm I think it would be for the best to properly just use =org-publish= for my static generation. Or at least use something like [[https://github.com/bmaland/happyblogger][this]] that lets you control the org document rendering before jekyll gets its hands on it.
 
-* Spotify
-For the music I originally thought of hosting myself and building a custom player, but I'm not exactly looking to start an open case by using =github=. It would have had the upside of allowing me to use my own player. Oh well.
-
-Instead I'm just using a =spotify= embed as a =jekyll= include:
-
-#+BEGIN_SRC html
-  <iframe
-       id=spotify
-       src="https://open.spotify.com/embed/track/ID"
-       allow="encrypted-media">
-  </iframe>
-#+END_SRC
-
-Simply include a spotify track ID in the org header arguments:
-
-#+BEGIN_SRC
-#+SPOTIFY: 2sEmZge5ZfzrFrDGFJbkyP
-#+END_SRC
-
-and you'll get:
-
-{% include spotify.html id='2sEmZge5ZfzrFrDGFJbkyP' %}
-
-Well in this case I just simply included it in my org doc, but you get the point.
-
 * Banner
 As apposed to doing a simple image, I really wanted to have a proper sprawling, repeating, banner. Which is pretty easy:
 
