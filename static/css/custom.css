@@ -360,7 +360,8 @@ svg:not([fill]) {
     padding: 0 !important;
     float: left;
     filter: none;
-    border-right: 1px var(--foreground) solid;
+    border: 0 !important;
+    border-right: 1px var(--foreground) solid !important;
 }
 
 .sound .sound-description {
