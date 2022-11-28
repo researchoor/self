@@ -1,6 +1,7 @@
 #+TITLE: Maybe analog techn​ologies?
 #+LAYOUT: short
 #+ICON: ok.svg
+#+STATUS: You'd hope.
 
 Traditionally I haven't been that interested in getting my hands dirty.
 
@@ -10,10 +11,15 @@ And this isn't a means to avoid "blue-collar" work. Oil paints are occult in nat
 
 A clutz like me falls a lot in a world of potholes. 
 
-{% include dotbreak.html %}
+{% include linebreak.html %}
 
-After reading [[https://en.wikipedia.org/wiki/Zen_and_the_Art_of_Motorcycle_Maintenance][Zen and the Art of Motorcycle Maintenance]] I feel obligated to reconsider my pissy reactions to any task with physical tools.
+Well ok that's a lot of jibber, but I should probably at least try. What about books:
 
-It's not a perfect book, but it probably deserves a formalized [[../thoughts][thought]] or two. More likely it will hiss in my head until another paradigm manages to wriggle through the sludge and I'll claim that snake solves everything.
+{% include question-list.html questions='books' %}
 
-Anyways bike repairs maybe? I should write that down somewhere.
+Huh well, have I at least learned any physical skills by now?
+
+{% include question-list.html questions='crochet' %}
+
+Fair enough.
+

@@ -1,0 +1,20 @@
+<table class="question-status">
+    <tr>
+        <td width="40px">
+            {% include question-icon.html icon=page.icon %}
+        </td>
+        <td>
+            {% unless page.icon %}
+            Not sure yet...
+            {% elsif page.status %}
+            {{ page.status | default: icon_name }}
+            {% elsif page.icon=='yay.svg' %}
+            Yep!
+            {% elsif page.icon=='nay.svg' %}
+            Hell no.
+            {% else %}
+            {{ page.icon | remove: ".svg" | capitalize }}
+            {% endunless %}
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,2 @@
+#+TITLE: Can I previz camera shots in Blender?
+#+LAYOUT: short

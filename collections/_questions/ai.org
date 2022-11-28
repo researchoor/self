@@ -1,0 +1,10 @@
+#+TITLE: What the fuck is AI?
+#+LAYOUT: short
+
+{% include scroll.html content='Please for the love of god do not use this page as reference. There is no way that there are not better resources out there. If you accidentally end up one of those god forsaken pages, click something I link to because they /HAVE/ to be better written.' %}
+
+Considering I mostly learn via slamming my head against a wall, it's unfortunate when I come across a topic that involves thinking ahead. Unless you wanna give me compute ([[mailto:work@lllil.li][work@lllil.li]]) I really wanna make sure that the matrix multiplication is doing what I want.
+
+In an attempt to do that very thing, I'll try.
+
+{% include question-list.html questions='architecture,alignment' %}

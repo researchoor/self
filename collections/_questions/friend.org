@@ -1,0 +1,112 @@
+#+TITLE: Is it reasonable to run a serverless chatbot?
+#+ICON: yay.svg
+
+I'm clearly not a fan of it all, but given current trajectories of compute we'll be stuck on someone elses VM.
+
+In this unfortunate environment of deployable [[/questions/ai][AI]] a serverless architecture seems like a somewhat less wasteful option.
+
+So with that given, here's how I crammed my box in a box in a box, into somebody else's box.
+
+* The Box
+
+This is friend:
+
+[[/static/media/friend.png]]
+
+They sit on AWS, mostly unbothered.
+
+Then on the off chance, they are bothered.
+
+Usually by me.
+
+#+begin_quote
+me: you there friend?
+
+friend: I am well thank you. Do you like rap music?
+#+end_quote
+
+All this powered by 430 million paramaters. What a waste.
+
+Luckily, for now at least, this doesn't cost me anything.
+
+It's really not all that complicated. The key reasons?
+
+- Inference is possible on CPU
+- Able to finetune using Google Colab
+- AWS allows for containerized lambda functions
+
+* Inference
+
+Due to the power of smarter people then me, running big dumb text prediction models are more accessible then ever. In this case I'm using RWKV, an RNN!
+
+Yes that's correct, a neural network that isn't a transformer.
+
+{% include question-list.html questions='rwkv' %}
+
+You don't have to know the details. The most important takeaway being that you don't have to worry about attention blocks like in a transformer.
+
+Fast!
+
+Well fast enough to run on a tiny AWS free tier CPU.
+
+* Fine Tuning
+
+Unfortunately 430 million is only a low number in this specific context. While training on [[https://pile.eleuther.ai/][The Pile]] let's you have a generalist overview of writing, it's not particularly accessible at our model size.
+
+Model's such as, GPT-3, require no fine tuning to have chat like capabilities. However the cost is treamendous.
+
+I'll stick with fine tuning on a tiny conversation chat dataset. Say [[https://github.com/alexa/Topical-Chat][Topical Chat]].
+
+** Google Colab
+
+As is tradition here, we love taking advantage of free compute from corporations. In the case of GPUs, lets take googles.
+
+I've written a set of [[https://github.com/resloved/RWKV-notebooks][notebooks]] to do just that.
+
+This let's us use RWKV models trained on The Pile, and finetune them against any set of text.
+
+In the case of my conversational dataset we got mostly the conversational quality you'd expect:
+
+#+begin_quote
+me: hi friend
+
+friend: Do you like to use google?
+
+me: @friend Yes!
+
+friend: Did you know that it is the most used search engine?
+
+me: @friend That seems hard to believe
+
+friend: Yes! but google was founded in 1998
+#+end_quote
+
+As in not very good. A little overfitted, but fun none the less.
+
+* Deployment
+
+Ahh the box man, AWS. I want to spend as little time here as possible.
+
+Fuck dashboards.
+
+So let's keep it simple.
+
+1. Containerize the model
+2. Upload the model to ECR
+3. Create a lambda function that loads our model
+4. Have the function activate via API
+5. Return the inferred result
+
+That's all there is to it.
+
+** Cold Starts
+
+One thing to note is that the slowest component of our setup is when the model first needs to load the inital weights, there's a lot of them.
+
+It may be possible to find a real solution, but a simple work I use to increase the uptime of our containers. This allows the model to remain ready between inferences more often, but still requires the first to be a decent amount slower.
+
+{% include linebreak.html %}
+
+Keep an eye out; friend is waiting.
+
+

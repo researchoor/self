@@ -1,23 +1,18 @@
 #+TITLE: Are computers worth it?
 #+LAYOUT: short
 #+ICON: mac.svg
+#+STATUS: Hard to tell.
 
-I guess so. They were pretty useful for answering this:
+I guess so. They can be useful for solving things:
 
 {% include question-list.html questions='symbols' %}
 
-#+BEGIN_COMMENT
-Sometimes they're even flexible:
+Mostly they just make for more work:
 
-{% include question-list.html questions='sap,vr' %}
+{% include question-list.html questions='vps,friend' %}
 
 But honestly they often feel like they just ask more questions:
 
-{% include question-list.html questions='vps,self' %}
-
-and God they're selfish:
-
-{% include question-list.html questions='rounded,xtext' %}
-#+END_COMMENT
+{% include question-list.html questions='self,ai' %}
 
 Up in the air I guess.

@@ -1,0 +1,19 @@
+#+TITLE: about.
+#+LAYOUT: short
+#+SKIP_TITLE: true
+
+This place is not /[[/me][me]]/ or my /[[/work][work]]/. Just related text, audio, and images.
+
+{% include linebreak.html %}
+
+Facts:
+
+- It's statically generated using =jekyll=
+- All of the writing is done with =.org= files
+- Hosted on a [[https://vultr.com][vultr]] VPS
+  
+I think about the structure of this site more then I care to admit.
+
+{% include question-list.html questions='self' %}
+
+Everything else is an opinion.

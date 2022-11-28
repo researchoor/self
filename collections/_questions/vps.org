@@ -1,6 +1,14 @@
-#+TITLE: How should I host my own stuff?
+#+TITLE: Should I host my own stuff?
+#+ICON: yay.svg
+#+STATUS: As cheaply as possible.
 
-As simply and frugally as possible ideally.
+I'm a little on the fence on the value of self hosting. On one hand my hatred of homogenized internet is never ending, but does me yelling into the ether ever change anything.
+
+Eh; it's kinda fun.
+
+{% include dotbreak.html %}
+
+Well if I am going to do this it better be simple.
 
 Currently I need to be able to host:
 - This website
@@ -11,8 +19,18 @@ Currently I need to be able to host:
 Pretty attainable.
 
 * Nginx
+Have a Nginx container to handle incoming traffic as well as my certs. Simply add configuration to any new container that should be exposed and off you go.
+
 * Self
+Get github actions to slap my static site in a container for convenience.
+** Watchtower
+Use [[https://github.com/containrrr/watchtower][Watchtower]] to pull my site containers as updates are pushed, given no build issues. 
+
 * Synapse
-* Watchtower
+Convolutedly setup synapse using an out of the box container with a finicky Docker Compose file.
+
+{% include dotbreak.html %}
+
+And that's all it takes
 
 As of now it's all pretty functional on a minimal $5/month VPS @ [[https://vultr.com][vultr]] which is good enough for me.

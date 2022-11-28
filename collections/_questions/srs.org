@@ -1,4 +1,2 @@
-#+TITLE: What was the most difficult speedrun?
+#+TITLE: Can I find the least appreciated speedrun?
 #+LAYOUT: short
-
-I don't know...

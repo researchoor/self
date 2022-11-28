@@ -1,0 +1,13 @@
+#+TITLE: Are books worth talking about?
+#+LAYOUT: short
+#+ICON: nay.svg
+
+Book reviews are bad and not worth talking about.
+
+The following are summaries and notes on books I've read or currently reading for personal clarification and future reference.
+
+Have I finished these?
+
+{% include question-list.html questions='zen,forgetting,thousand' %}
+
+Written words are bad, consider talking to people instead.

@@ -1,6 +1,7 @@
 #+TITLE: Should I just stick with eating dirt?
 #+ICON: happy.svg
 #+LAYOUT: short
+#+STATUS: yum minerals good 
 
 I once probed a 3 meter tall stick bug on the origins of life and the universe. They imparted this wisdom unto me: 
 

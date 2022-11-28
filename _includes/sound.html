@@ -2,7 +2,11 @@
 <div class="sound">
     <a href="{{ sound.link }}"><img src="{{ sound.art }}"></a>
     <div class="description">
-        <p><b>{{ sound.title }}</b> by {{ sound.artist }}</p>
+        <p>
+            <a href="/sounds/{{ sound.slug }}" style="text-decoration: none !important">♫</a>
+            <b><a href="{{ sound.link }}">{{ sound.title }}</a></b>
+            by {{ sound.artist }}
+        </p>
         <i>{{ sound.album }}</i>
     </div>
 </div>

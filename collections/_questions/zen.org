@@ -1,0 +1,7 @@
+#+TITLE: Zen and the Art of Motorcycle Maintenance?
+#+LAYOUT: short
+#+ICON: yay.svg
+
+After reading this I feel obligated to reconsider my pissy reactions to any task with physical tools.
+
+It's not a perfect book, but it probably deserves a formalized [[../thoughts][thought]] or two. More likely it will hiss in my head until another paradigm manages to wriggle through the sludge and I'll claim that snake solves everything.

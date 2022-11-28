@@ -1,9 +1,5 @@
-<div class="question-icon">
-  {% assign folder = "qicons/" %}
-  {% if include.question.icon %}
-    {% assign location = folder | append: include.question.icon %}
-  {% else %}
-    {% assign location = folder | append: 'mark.svg' %}
-  {% endif %}
+<div class="icon">
+  {% assign icon = include.icon | default: 'mark.svg' %}
+  {% assign location = "qicons/" | append: icon %}
   {% include {{ location }} %}
 </div>

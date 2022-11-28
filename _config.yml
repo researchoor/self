@@ -20,6 +20,7 @@ collections:
   experiences:
     output: true
   sounds:
+    output: true
 
 defaults:
   - scope:
@@ -42,6 +43,10 @@ defaults:
       type: "experiences"
     values:
       layout: "long"
+  - scope:
+      type: "sounds"
+    values:
+      layout: "sound"
 
 org:
   liquid: true

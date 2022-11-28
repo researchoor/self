@@ -1,4 +1,5 @@
-#+TITLE: What does an AI generated logo look like?
+#+TITLE: Can AI generate a logo?
+#+ICON: yay.svg
 
 I'm a big fan of the "Trade Marks & Symbols" series by Yasaburo Kuwayama.
 
@@ -75,20 +76,101 @@ And as for results, here's some examples:
 
 go to [[/symbols][/symbols]] if you want to check out the whole set.
 
-* Symbol Generation via GAN
+* Generative Adversarial Networks
 
 It went as well as expected. Here's a run over many epochs:
 
-{% include invertible.html path='/static/media/epochs.gif' %}
+[[/static/media/epochs.gif]]
 
 There was some cool artifacting, but to actually get decent results I'd have to have a much larger set and do some more thorough tuning.
 
 I liked this one though:
 
-{% include invertible.html path='/static/media/artifact.png' %}
+[[/static/media/artifact.png]]
 
-Making a simple GAN via =keras= is cool and all, but a little trite really. That novelty is long gone.
+Making a simple GAN via Keras is cool and all, but a little trite really. That novelty is long gone.
 
 Don't get me wrong there is a ton of bleeding edge interesting work with AI in an arts and visual capacity, but not at my level of NN understanding.
 
 Pretty sure [[https://magenta.tensorflow.org/svg-vae][decoding as an SVG]] or using categorical data with [[https://github.com/NVlabs/stylegan][StyleGAN]] are within my capabilities, but I'd have to come up with a better set first.
+
+* Stable Diffusion
+
+{% include dotbreak.html %}
+
+~ The Passage Of Time ~
+
+{% include dotbreak.html %}
+
+The previous work was done quite some time ago, lot's has changed.
+
+Large generic image generation has improved significantly and has overtaken bespoke models trained on specific image domains.
+
+Of these I was recently playing with Stable Diffusion (or SD).
+
+SD can produce some incredible stuff and it can even be quite clever.
+
+For example when I was attempting to generate landscapes, I recieved two very different of the prompt "The edge of our world has a view of our starry night sky..."
+
+[[/static/media/starry.png]]
+[[/static/media/starry2.png]]
+
+However I was mostly already aware of the potency these models have when generating highly detailed scenes.
+
+Back to symbols.
+
+{% include dotbreak.html %}
+
+After some finangaling and research I've gotten some satisfactory results with the following:
+
+#+begin_src 
+"minimal geometric logo by karl gerstner monochrome centered symetrical bordered"
+    -C 15.0
+    -s 150
+    -S 1972652511
+    -i 9
+#+end_src
+
+[[/static/media/abstract_symbol.png]]
+
+The largest takeaways being:
+
+1. Using an artist is always easier, but limiting
+2. Having a high "CFG" leads to sharper edges
+3. Abusing seeds is required for tuning
+
+Appending animal names to the previous prompt led to some great results:
+
+[[/static/media/animals.png]]
+
+These do come with a touch of processing to generate the =.svgs= and clean up the border.
+
+* Ongoing Work
+
+Much of the past year has really solidifed an uneasy feeling I've had about the direction of AI.
+
+Put simply, the actual generation of these images doesn't function in a way that is intuitive to how people would expect.
+
+It's more likely my mom would imagine the model working as a search engine, simply searching the space of concepts and matching the words you've typed.
+
+Which is obviously incorrect, but I think it comes down to the current tooling.
+
+People don't think of images as a combination of labels with given weights for each word. Despite this, that's largely all we've got currently to steer these things.
+
+The only other option is referencing other images in some fashion. Either to infill/outfill or do some process of image -> image.
+
+Really though, images are representations of models in our head. Each model representing many many concepts at given values. Being able to describe an image in your head is much more likely to be vague ideas then a poor text description of it.
+
+So I'd like to hope that, while text being so easily exposed as data for us to use as replacement for interacting with the very complex neural networks that will define our lives, we will in the future find more intuitive ways to interface with the representations these networks have internally.
+
+Something like [[https://sites.google.com/view/coadaptation?pli=1][MIMI]] that's capable of measuring the level of intuitivness of arbitrary interfaces seems like the right idea, even if at a loss of "efficiency".
+
+Given how many resources are being put to power these things, I'd sure hope we'd actually figure out how to communicate properly.
+
+{% include dotbreak.html %}
+
+Anyways here's a generated wool ferret:
+
+[[/static/media/ferret_wool.png]]
+
+That's better.

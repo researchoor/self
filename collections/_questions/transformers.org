@@ -1,0 +1,17 @@
+#+TITLE: Transformers?
+#+LAYOUT: short
+
+[[https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/][Something]] to reference.
+
+{% include dotbreak.html %}
+
+In vague terms, a transfomer does as titled. Takes a sequence and transforms it into another sequence.
+
+A transformer is largely composed of encoders and/or decoders. These /coders/ are often simply RNNs, neural networks that take their output as input recursivly.
+
+The encoder takes some input, encodes it into w/e vector is ideal. This vector, referred to as our context, is passed to the decoder which returns our context back into a sequence.
+
+Terms/Concepts to internalize:
+- Context Length
+- Word Embeddings
+- Softmax

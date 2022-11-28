@@ -1,0 +1,50 @@
+#+TITLE: Neural Networks?
+#+ICON: yay.svg
+
+To avoid the actual nitty gritty of it I'm just gonna write what I find important to have intuitive.
+
+Given an input that can be represented as a two dimensional vector. For example:
+
+#+begin_src 
+X
+Y
+#+end_src
+
+And an output of a three dimensional vector. For example:
+
+#+begin_src 
+A
+B
+C
+#+end_src
+
+The resulting 2 layer network would look like result in two initial nodes, connected to three resulting nodes.
+More simply layers are transformations between one n-dimensional vector and one m-dimensional vetor
+
+The actual calculation between layers is as follow. Given an input of n nodes represented as an n-dimensional vector and an output of m nodes represented as a m-dimensional vector, preform matrix multiplication of a given set of weights (a matrix of dimensions n by m) against our input vector. This results in the output vector.
+
+The actual value here, which can come intuitivly, is the weights.
+
+{% include question-list.html questions='weights' %}
+
+Similarily for a RNN (Recurrent Neural Network) we can think of the model as a matrix with dimensions n by n. As the output and input are the same. 
+
+{% include linebreak.html %}
+
+Important note to self:
+
+It becomes clear what is happening is a result of the transformations in relation to our given data. It's like bit shifting or w/e, simply minimized operations that represent actual decisions.
+
+The important takeaway for me is that things are not right or wrong in a sense of:
+
+#+begin_quote
+"oh matrix addition is equal to this type of decision making"
+#+end_quote
+
+but rather:
+
+#+begin_quote
+"oh we did matrix addition because given these two inputs we want this representation so we can do this other transformation"
+#+end_quote
+
+ Little tools that combine to do actions, not neccesarilly the be all end all of how things happen.

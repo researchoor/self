@@ -2,12 +2,16 @@
 #+SUBTITLE: maybe.
 #+SONG: A Mirror For Two Voices
 #+LAYOUT: short
+#+ICON: yay.svg
+#+STATUS: As far as I can tell.
 
 {% assign collection = site.collections | where: 'label', page.collection | first %}
 
 Looks like I have {{ collection.docs | size }} questions. I really doubt I'll have more.
 
-{% include question-item.html question_name='computers' %}
+There's one right now! Quick catch it!
+
+{% include question-list.html questions='computers' %}
 
 Oh you're still here? These might be useful then:
 
@@ -15,6 +19,6 @@ Oh you're still here? These might be useful then:
 
 {% assign types = site.git.last_commit.commit_date | split: ' ' %}
 
-That's all.
+Alright.. go away already.
 
 

@@ -1,4 +1,5 @@
-#+TITLE: How should I represent n​oise as text?
+#+TITLE: N​oise as text?
+#+ICON: yay.svg
 
 If I really want to start hosting a blog that no one will read I need to set a few ground rules:
 
@@ -42,8 +43,8 @@ and again in my =org= documents header arguments:
 #+BANNER: stars.gif
 #+END_SRC
 
-results in:
+Results in:
 
 {% include banner.html banner='stars.gif'%}
 
-simple.
+Simple.

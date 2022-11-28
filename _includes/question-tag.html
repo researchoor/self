@@ -1,6 +1,14 @@
 {% assign question_doc = site.questions | where: "slug", include.question_name | first %}
 
-<div class="question-tag">
-  <a href="./{{ include.question_name }}">{% include question-icon.html question=question_doc %}</a>
-  <p><a href="./{{ include.question_name }}">{{ question_doc.title }}</a></p>
-</div>
+<tr class="question-tag">
+    <td width="40px">
+        <a href="/questions/{{ include.question_name }}">
+            {% include question-icon.html icon=question_doc.icon %}
+        </a>
+    </td>
+    <td>
+        <a href="/questions/{{ include.question_name }}">
+            {{ question_doc.title }}
+        </a>
+    </td>
+</tr>

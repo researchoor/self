@@ -1,7 +1,8 @@
 #+TITLE: Buffy the Vampire Slayer
 #+CATEGORY: show
+#+SONG: Sugar Water
 
-[[/static/media/buffy.png]]
+It's all gone awry.
 
 * Season 1
 ** Episode 3

@@ -1,7 +1,0 @@
----
-title: sounds
-subtitle: a mixtape.
-layout: centered
----
-
-{% include list-collection.html collection=site.links pre='/' %}

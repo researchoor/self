@@ -1,0 +1,21 @@
+#+TITLE: Forgetting — The Benefits of N⁠ot Remembering?
+#+LAYOUT: short
+#+ICON: yay.svg
+
+I liked when they said not remembering shit makes you nice and similar to bonobos cause you're too dumb to be mean. 
+
+Unfortunatley being light on details made the arguments sound so oversimplified. At no point was the thing I thought about the most, "why can't we just remember the right stuff", ever really addressed.
+
+I understand that not remembering stuff can allow you to extrapolate more, but I really don't need to extrapolate on say --- someone's birthday.
+
+And there's no fucking way I'm gonna bother remembering that.
+
+{% include linebreak.html %}
+
+Also felt pretty brave to punctuate a pop psychology book by saying
+
+#+begin_quote
+Huh, it's really up in the air if my theory was right at all. Maybe smart people are just smart and it has nothing to do with forgetting things.
+#+end_quote
+
+At least pretend to be confident in your narrative.

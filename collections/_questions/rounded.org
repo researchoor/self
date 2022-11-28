@@ -1,4 +1,5 @@
 #+TITLE: Can you add rounded corners to i3?
 #+LAYOUT: short
+#+ICON: yay.svg
 
 Answer: [[https://github.com/resloved/i3][i3-rounded]]

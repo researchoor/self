@@ -1,0 +1,4 @@
+#+TITLE: Can we determine the mood of a twitch chat?
+#+ICON: nay.svg
+#+STATUS: Within reason? Nah.
+

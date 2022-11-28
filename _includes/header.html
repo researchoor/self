@@ -1,24 +1,31 @@
 <div id="header">
   {% assign title = include.title | default: page.title %}
+
+  {% assign collection_size=page.collection | size | minus: 1 %} 
+  {% assign sub=page.collection | slice: 0, collection_size %} 
+  {% assign subtag='<a href="./">' | append: sub | append: '</a>' %}
+  {% assign start=sub | slice: 0 %}
+
   {% if page.subtitle %}
     {% include titlebar.html title=title subtitle=page.subtitle %}
   {% else %}
-    {% assign collection_size=page.collection | size | minus: 1 %} 
-    {% assign sub=page.collection | slice: 0, collection_size %} 
-    {% assign subtag='<a href="./">' | append: sub | append: '</a>' %}
-    {% assign start=sub | slice: 0 %}
-  
     {% assign subtitle='a ' | append: subtag | append: '.'%}
     {% if "aeiou" contains {{start}} %}
       {% assign subtitle='an ' | append: subtag | append: '.'%}
     {% endif %}  
-
     {% include titlebar.html title=title subtitle=subtitle %}
+  {% endif %}
+
+  {% if sub=='question' %}
+    {% include question-status.html icon=page.icon %}
   {% endif %}
 
   {% if page.song %}
     {% include sound.html name=page.song %}
-  {% else %}
-    {% include linebreak.html %}
   {% endif %}
+
+  {% unless page.song or page.scroll or sub=='question' %}
+    {% include linebreak.html %}
+  {% endunless %}
+
 </div>

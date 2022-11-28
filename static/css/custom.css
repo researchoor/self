@@ -88,14 +88,15 @@ blockquote {
 
 pre, code {
     font-family: 'source code pro';
-    font-size: 11px;
     font-weight: bold;
-    background: var(--foreground);
-    color: var(--highlights);
 }
 
-code {
-    padding: 3px 6px;
+code, pre {
+    font-size: 12px;
+}
+
+pre {
+    border: 1px var(--foreground) dashed !important;
 }
 
 #header {
@@ -189,6 +190,19 @@ ul li::before {
 
 #moment ul {
     text-align: left;
+}
+
+#menu {
+    border-left: 1px var(--foreground) dashed;
+    padding-left: 45px;
+}
+
+#menu li {
+    text-align: left;
+}
+
+#menu li::before {
+    content: none;
 }
 
 .box {
@@ -294,27 +308,54 @@ dt {
     font-family: comfy;
 }
 
-.question-tag {
-    height: 40px;
-    line-height: 40px;
-    margin: 20px 0;
-}
-
 .question-tag a {
     text-decoration: none;
 }
 
-.question-icon {
-    margin-right: 10px;
-    border: 1px var(--foreground) solid;
+.question-status .icon svg:not([fill]) {
+    fill: var(--background);
+    background: var(--foreground);
+}
+
+.icon {
+    border-right: 1px var(--foreground) solid;
     height: 40px;
     width: 40px;
-    float: left;
+    margin-right: 12px !important;
+}
+
+.scroll .icon {
+    margin-right: 0 !important;
+}
+
+.scroll td, .question-list td, .question-status td {
+    text-align: left !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+.question-status, .question-tag, .scroll {
+    height: 40px; 
+    padding: 0 !important;
+    border: 1px var(--foreground) solid !important;
+}
+
+.scroll .icon {
+    margin: 0;
+    padding: 0;
+}
+
+.question-status {
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.question-tag::hover {
+    color: red !important;
 }
 
 svg:not([fill]) {
     fill: var(--foreground);
-    image-rendering: pixelated;
 }
 
 .symbols {
@@ -378,6 +419,10 @@ svg:not([fill]) {
     padding: 0;
 }
 
+.sound a {
+    text-decoration: underline !important;
+}
+
 @media (prefers-color-scheme: dark) {
     .invertible, .symbol {
         filter: invert(1);
@@ -389,5 +434,6 @@ svg:not([fill]) {
         filter: invert(0);
     }
 }
+
 
 

@@ -1,0 +1,3 @@
+#+TITLE: A Thousand Brains — A New Theory of Intelligence?
+#+LAYOUT: short
+#+ICON: yay.svg

@@ -1,0 +1,13 @@
+#+TITLE: How does AI work?
+#+LAYOUT: short
+
+Are these related?
+
+{% include question-list.html questions='nn,transformers,gpt,clip,rwkv,mimi' %}
+
+
+Jeff Hawkins probably disagrees.
+
+{% include question-list.html questions='thousand' %}
+
+Sorry Jeff.

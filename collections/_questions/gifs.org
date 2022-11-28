@@ -1,0 +1,4 @@
+#+TITLE: Can CLIP evaluate GIFs? 
+#+LAYOUT: short
+
+{% include question-list.html questions='clip' %}

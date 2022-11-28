@@ -1,0 +1,4 @@
+#+TITLE: Should AI work?
+#+LAYOUT: short
+#+ICON: mark.svg
+#+STATUS: Let's be real it probably shouldn't.

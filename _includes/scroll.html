@@ -1,1 +1,10 @@
-<marquee class=box behavior="scroll" direction="left">{{ include.content }}</marquee>
+<table class="scroll">
+    <tr>
+        <td>
+            {% include question-icon.html icon="warning.svg" %}
+        </td>
+        <td>
+            <marquee>{{ include.content }}</marquee>
+        </td>
+    </tr>
+</table>
